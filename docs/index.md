@@ -14,9 +14,15 @@ title: Vue d'ensemble
 
 ## Équipe 14
 
+<<<<<<< Updated upstream
 - **`M1`:** Alix Loungnarath (20274695) #alixloungnarath
 - **`M2`:** Vincent Carbonneau (matricule) #volgar5693
 - **`M3`:** Justine Theriault (matricule) #justine3729 
+=======
+- **`M1`:** Membre 1 (matricule) #nom-utilisateur
+- **`M2`:** Justine Theriault (20231918) #justine3729
+- **`M3`:** Membre 3 (matricule) #nom-utilisateur  
+>>>>>>> Stashed changes
 - **`M4`:** Membre 4 (matricule) #nom-utilisateur
 
 ## Description du projet
