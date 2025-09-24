@@ -14,19 +14,13 @@ title: Vue d'ensemble
 
 ## Équipe 14
 
-<<<<<<< Updated upstream
 - **`M1`:** Alix Loungnarath (20274695) #alixloungnarath
 - **`M2`:** Vincent Carbonneau (matricule) #volgar5693
-- **`M3`:** Justine Theriault (matricule) #justine3729 
-=======
-- **`M1`:** Membre 1 (matricule) #nom-utilisateur
-- **`M2`:** Justine Theriault (20231918) #justine3729
-- **`M3`:** Membre 3 (matricule) #nom-utilisateur  
->>>>>>> Stashed changes
+- **`M3`:** Justine Theriault (20231918) #justine3729 
 - **`M4`:** Membre 4 (matricule) #nom-utilisateur
 
 ## Description du projet
-Ce projet a pour objextif de créer une plateforme web accessible aux étudiants de l'Université de Montréal. Le but de cette plateforme est de rassembler toute l'information concernant les cours offerts à l'Université afin de simplifier le choix de cours des étudiants. La plateforme contiendra donc de l'information provenant des sources officielles de l'université de Montréal ainsi que d'autre information provenant des sources non-officielles comme les avis des étudiants sur Discord. 
+Ce projet a pour objetif de créer une plateforme web accessible aux étudiants de l'Université de Montréal. Le but de cette plateforme est de rassembler toute l'information concernant les cours offerts à l'Université afin de simplifier le choix de cours des étudiants. La plateforme contiendra donc de l'information provenant des sources officielles de l'Université de Montréal ainsi que d'autre information provenant des sources non-officielles comme les avis des étudiants sur Discord. 
 
 ## Échéancier
 
