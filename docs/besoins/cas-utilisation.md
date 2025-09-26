@@ -17,7 +17,6 @@ TODO: Introduction aux cas d’utilisation du système.
 | CU03 | Recherche | Utilisateur | L'utilisateur entâme une recherche de cours. |
 | CU04 | Filtrer | Utilisateur | L'utilisateur personnalise/filtre sa recherche de cours. |
 | CU05 | Cours | Utilisateur | L'utilisateur consulte les détails du cours sélectionné |
-| CU06 | Ajout/Retrait | Utilisateur | L'utilisateur ajoute ou retire les cours de son horaire. |
 | CU07 | Éligibilité | Utilisateur | L'utilisateur vérifie s'il est éligible à s'inscrire au cours. |
 | CU08 | Avis étudiant | Utilisateur | L'utilisateur consulte les avis étudiants du cours. |
 | CU09 | Déposer avis | Discord | L'utilisateur dépose un avis sur un cours. |
