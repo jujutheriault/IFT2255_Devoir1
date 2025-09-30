@@ -6,7 +6,13 @@ title: Analyse des besoins - Présentation générale
 
 ## Méthodologie pour la cueillette des données
 
-TODO: Préciser comment les besoins ont été collectés (entrevues, questionnaires, brainstorming, etc.).
+Les besoins ont premièremement été communiqués par le client. Suite à sa demande, nous avons fait un brainstrom pour tenter de séparer le mieux possibles les différentes fonctionnalités que la plateforme web doit offrir afin de répondre à tous les besoins du clients. Durant ce brainstorm, l'équipe a également tenté de cerner tous les besoins possibles, ceux mentionnés par le clients ainsi que d'autres besoins supplémentaires qui devraient être comblés par la plateforme web. Nous avons ensuite questionné le client à propos de certaines fonctionnalités que nous n'étions pas certains d'inclure ou non, comme la possibilité de modifier son horaire à partir de l'application. 
+
+Pour répondre à ces besoins, les données que nous utiliserons afin d'obtenir toutes les informations nécéssaires à la conception de la plateforme web seront récoltées de différentes manières. 
+
+1. Les données concernant chaque étudiant seront récoltées lors de la création du compte de l'étudiant et ce dernier pourra toujours les mettre à jour dans son profil.
+2. Les données officielles convernant les cours seront récoltés à partir de l'API planifium.
+3. Les résultats agrégés pour les cours seront fournis sous forme de fichier CSV.
 
 ## Description du domaine
 
