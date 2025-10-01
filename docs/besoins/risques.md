@@ -21,9 +21,9 @@ title: Analyse des besoins - Risques
 ## Risque 2 - 
 ## Modification du processus opérationnel
 
--**Probabilité**: Moyenne
--**Impact**:Élevé
--**Plan de mitigation**:
+- **Probabilité**: Moyenne
+- **Impact**:Élevé
+- **Plan de mitigation**:
   - Avoir un plan structuré pour la gestion du changement de processus
   -Impliquer le plus de personnel possible pour l'approbation de ce changement
   -Documenter chaque étape du développement
@@ -45,22 +45,21 @@ title: Analyse des besoins - Risques
 
 ## Risque 4  
 ## Horaire des cours est erroné. Les données de cours ne sont pas à jour.
--**Probabilité** : Faible
--**Impact** : Élevé
--**Plan de mitigation**:
-
+- **Probabilité** : Faible
+- **Impact** : Élevé
+- **Plan de mitigation**:
   -Assurer la mise à jour du système lorsque les informations relatives à un cours sont disponibles.
   -Vérifier l'alignement des informations entre le frontend et le backend.
   -Vérifier les erreurs de synchronisation qui pourraient engendrer une perte de données.
-  -
+
 
 
 ## Risque 5
 ## Certains commentaires du serveur discord ne sont pas appropriés(aucun lien avec le cours,contient des insultes aux professeurs ou au cours en général)
 
--**Probabilité**: Élevée
--**Impact**: Élevé
--**Plan de mitigation**:
+- **Probabilité**: Élevée
+- **Impact**: Élevé
+- **Plan de mitigation**:
   -Avoir une ou plusiquers personnes assigées à la modération des commentaires affichés dans le système
   -Mettre en place un programme de filtrage des mots qui ne doivent pas faire partie des commentaires(bot filtre les commentaires)
   -Message sur le discord avisant les usagers de garder les commentaires utiles pour les utilisateurs de la plateforme.
@@ -69,11 +68,10 @@ title: Analyse des besoins - Risques
 
 ## Risque 6
 ## Implémentation des critères de recherche pas assez pointue
--**Probabilité**: Faible
--**Risque**: Faible
--**Impact**: Faible
-
-**Plan de mitigation**
+- **Probabilité**: Faible
+- **Risque**: Faible
+- **Impact**: Faible
+- **Plan de mitigation**
   -implémenter un code qui traite les mots/numéros en proposant
   ce qui s'en rapproche le plus dans la banque de cours.
   -Avoir une banque de mot-clés à jour et diversifiée.
