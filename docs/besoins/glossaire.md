@@ -8,5 +8,5 @@ Ce glossaire définit les termes importants utilisés dans le projet, en particu
 
 | Terme | Définition |
 |-------|------------|
-| Exemple 1 | Définition du terme 1 |
+| Étudiant | Un étudiant un utilisateur de la plateforme  |
 | Exemple 2 | Définition du terme 2 |
