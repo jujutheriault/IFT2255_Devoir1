@@ -18,8 +18,7 @@ title: Analyse des besoins - Risques
   - Favoriser le pair programming
 
 
-## Risque 2 - 
-## Modification du processus opérationnel
+## Risque 2 - Modification du processus opérationnel
 
 - **Probabilité**: Moyenne
 - **Impact**:Élevé
@@ -30,8 +29,7 @@ title: Analyse des besoins - Risques
   - Faire des points de contrôle réguliers(tests, réunions, consensus de groupe)
 
 
-## Risque 3
-## Risque d'enfreindre les lois gouvernementales en matière de sécurité 
+## Risque 3 - Risque d'enfreindre les lois gouvernementales en matière de sécurité 
 
 - **Probabilité**: Moyenne
 - **Impact**: Élevé
@@ -43,8 +41,7 @@ title: Analyse des besoins - Risques
   - Collection minimale de donées et élimination des données sensibles aussitôt que cela s'avère nécessaire.
   - utilisation de HTTPS pour toute intéraction serveur-client.
 
-## Risque 4  
-## Horaire des cours est erroné. Les données de cours ne sont pas à jour.
+## Risque 4 - Horaire des cours est erroné. Les données de cours ne sont pas à jour.
 - **Probabilité** : Faible
 - **Impact** : Élevé
 - **Plan de mitigation**:
@@ -54,8 +51,7 @@ title: Analyse des besoins - Risques
 
 
 
-## Risque 5
-## Certains commentaires du serveur discord ne sont pas appropriés(aucun lien avec le cours,contient des insultes aux professeurs ou au cours en général)
+## Risque 5 - Certains commentaires du serveur discord ne sont pas appropriés(aucun lien avec le cours,contient des insultes aux professeurs ou au cours en général)
 
 - **Probabilité**: Élevée
 - **Impact**: Élevé
@@ -66,8 +62,7 @@ title: Analyse des besoins - Risques
 
 
 
-## Risque 6
-## Implémentation des critères de recherche pas assez pointue
+## Risque 6 - Implémentation des critères de recherche pas assez pointue
 - **Probabilité**: Faible
 - **Risque**: Faible
 - **Impact**: Faible
