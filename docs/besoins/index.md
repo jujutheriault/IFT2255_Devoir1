@@ -6,46 +6,48 @@ title: Analyse des besoins - Présentation générale
 
 ## Méthodologie pour la cueillette des données
 
-TODO: Préciser comment les besoins ont été collectés (entrevues, questionnaires, brainstorming, etc.).
+Les besoins ont premièremement été communiqués par le client. Suite à sa demande, nous avons fait un brainstrom pour tenter de séparer le mieux possibles les différentes fonctionnalités que la plateforme web doit offrir afin de répondre à tous les besoins du clients. Durant ce brainstorm, l'équipe a également tenté de cerner tous les besoins possibles, ceux mentionnés par le clients ainsi que d'autres besoins supplémentaires qui devraient être comblés par la plateforme web. Nous avons ensuite questionné le client à propos de certaines fonctionnalités que nous n'étions pas certains d'inclure ou non, comme la possibilité de modifier son horaire à partir de l'application. 
+
+Pour répondre à ces besoins, les données que nous utiliserons afin d'obtenir toutes les informations nécéssaires à la conception de la plateforme web seront récoltées de différentes manières. 
+
+1. Les données concernant chaque étudiant seront récoltées lors de la création du compte de l'étudiant et ce dernier pourra toujours les mettre à jour dans son profil.
+2. Les données officielles convernant les cours seront récoltés à partir de l'API planifium.
+3. Les résultats agrégés pour les cours seront fournis sous forme de fichier CSV.
 
 ## Description du domaine
 
 ### Fonctionnement
-1. Il sera possible de consulter le tableau de bord de chaque cours. Chaque tableau de bord contiendra un section "Avis" qui permettra de consulter les avis les plus importants par rapport à ce cours. Les avis semblables ne seront pas montrés séparément mais ils seront agrégés en un seul avis. Les avis qui n'ont pas au moins 5 avis semblables ne seront pas affichés.
-2. L'étudiant devra se créer un compte. Au moment de la création de ce compte, il devra indiquer les caractéristiques personnelles qui lui correspondent. Il ne sera pas obligé de répondre à tous les champs mais les propositions seront les suivantes: préférences (théorique ou pratique), centre d'intérêt, préférence d'horaire, etc. Ces informations sur l'étudiants seront utilisées pour présenter des résultats personnalisés à l'étudiant au moment de ses recherches. 
-3. L'étudiant doit avoir accès à une barre de recherche pour rechercher les cours. 
-4. Dans le tableau de bord d'un cours, il doit clairement être indiqué si l'étudiant est éligible ou non au cours. 
-5. Une fonctionnalité doit permettre à l'étudiant de comparer plusieurs cours pour estimer la charge totale de travail d'une combinaison de cours. Cette charge de travail sera exprimée en heure par semaine. 
-6. La charge de travail de chaque cours sera indiquée dans le tableau de bord de ce cours. 
-7. Les résultats académiques agrégés (moyenne, inscrits, échec), lorsque fournis pour le cours, doivent être indiqués dans le tableau de bord des cours . 
-8. L'interface de la plateforme web doit être simple d'utilisation. 
-9. Le système doit utiliser un API afin d'aller chercher les informations présentées dans la plateforme web. 
-10. Le système doit préserver la confidentialité des données fournies par les utilisateurs.
-11. La plateforme web doit respecter la législation en vigueur (Loi 25).
-12. Toutes les données reccueillies sur chacun des cours seront affichées dans le tableau de bord de ce cours. 
+1. Pour consulter les cours offerts à l'Université de Montréal, la liste de tous les cours sur le site de l'Université de Montréal.
+2. Afin de savoir s'ils sont éligibles au cours, les étudiants doivent cliquer sur le cours qui les intéressent puis regarder les préalables du cours. Ils doivent ensuite vérifier qu'ils ont déjà suivi les cours préalable. 
+3. Pour savoir s'ils sont intéressé par un cours et pour connaître la charge de travail associée à ce cours, les étudiants doivent aller fouiller sur des forums où ils trouveront peut-être des commentaires d'élèves aillant déjà fait ce cours. 
+4. Afin de comparer deux cours, les étudiants doivent eux-mêmes dresser des listes de pour et de contre à partir d'information trouvée sur des forums et sur le site de l'Université de Montréal. 
+5. Pour connaître les résultats des cours antérieurs, les étudiants doivent aller chercher l'information à partir de sources officielles de l'Université de Montréal. 
+6. Il n'y a pas de moyen pour que les étudiants se fasse proposer des cours en fonction de leurs préférences. Ils doivent eux-mêmes parcourir toutes leurs options pour répondre à leurs questions. 
 
 ### Acteurs
 1. Les étudiants de l'Univeristé de Montréal: 
-    Ils seront les principaux utilisateurs de la plateforme web mais c'est aussi ceux qui laissent leurs avis sur les cours. Il faut garder en tête qu'il existe plusieurs types d'étudiants. Certains sont des étudiants internationaux, d'autres des étudiants de première années, d'autres des étudiants à temps partiels etc. Leurs besoins varient selon leur type. 
+    Ils seront les principaux utilisateurs de la plateforme web
 
-2. API planifium: 
-    C'est l'API qui sera utilisé pour avoir accès au catalogue officiel des programmes, des cours et des horaires de l'Université de Montréal. Elle permet d'obtenir la liste des cours offerts, leurs codes, titres, crédits, préalables ainsi que les horaires par trimestre. 
+2. Forums Discords: 
+    Discord intéragira avec la plateforme web lorsqu'un étudiant laissera un nouvel avis sur un cours sur un forum. Discord communiquera la nouvelle information à la plateforme web afin que celle-ci l'ajoute à ses données. 
 
-3. Forums Discords: 
-    C'est là où seront receuillis les avis des étudiants. 
+### Personas
 
-4. Résultats agrégés: 
-    C'est un fichier CSV regroupant les résultats globaux d'un cours donnée à une session précise. Il sera utilisé pour remplir certaines informations du tableau de bord de certains cours. 
+1. Julien est un étudiant de première année en informatique. Il ne connaît pas trop bien les différents domaines de l'informatique et est un peu perdu pour le choix de cours. Il vit chez ses parents, habite près de l'université et travaille les soirs dans un restaurant. Il aime beaucoup le sport et les jeux vidéos. Julien aurait besoin d'une plateforme pour l'aider à choisir les bons cours qui lui conviennent ainsi que trouver une façon de les faire concorder avec son horaire du temps chargé.
+
+2. Ann est une étudiante internationale. Le français n'est pas sa première langue donc elle est un peu perdue dans toute la documentation disponible à travers les plateformes différentes de l'Université de Montréal. Elle étudie en histoire mais elle a aussi un grand intérêt pour l'art. Elle a beaucoup de temps libre et est très bonne à l'école. Ann aimerait une plateforme qui rassemble toute l'information pour éviter de perdre des heures à lire de la documentation qui n'est pas dans sa première langue. 
+
+3. Charles est un père monoparental. Il a décidé de reprendre l'école dans le but de donner une meilleur vie à son fils. Il est très occupé avec son enfant et doit concilier école et travail pour continuer de subvenir aux besoins de sa famille. Il aimerait finir son baccalauréat le plus rapidement possible tout en modérant la charge de travail en lien avec chaque session. 
 
 ### Dépendances
 
-1. Les cours proposés à l'étudiant dépendent des préférences de l'étudiant.
-2. Les préférences de l'étudiant dépendent de ce que l'étudiant à indiqué lors de la création de son compte.
-3. Le tableau de bord d'un cours dépend de l'information obtenue à propos de ce cours.
-4. Les avis affichés dépendent du nombre d'avis similaires obtenus.
-5. L'étudiant est éligible à un cours s'il a complété tous les préalables à ce cours.
-6. Les cours proposés à l'étudiants dépendent de son programme. 
-7. L'affichage des résultats globaux d'un cours dépend de la disponibilité des données sur ce cours. 
+1. Les préférences de l'étudiants dépendent de ce que l'étudiant à indiqué sur son profil.
+2. On doit connaître le programme et les cours complétés pour chaque étudiants.
+3. Les préférences de l'étudiants ainsi que son programme et ses cours complétés influencent les cours qui lui sont proposés en premier sur la plateforme.
+4. On a besoin d'avis, de notes antérieurs ainsi que des horaires des cours afin de compléter le tableau de bord de chaque cours. 
+5. Les avis affichés dépendent du nombre d'avis similaires obtenus.
+6. L'affichage des résultats globaux d'un cours dépend de la disponibilité des données sur ce cours. 
+7. Le mode de vie de l'étudiant aura un impact sur ses préférences. 
 
 ## Hypothèses et contraintes
 

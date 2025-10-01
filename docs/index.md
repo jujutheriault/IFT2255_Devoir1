@@ -20,7 +20,7 @@ title: Vue d'ensemble
 - **`M4`:** Membre 4 (matricule) #nom-utilisateur
 
 ## Description du projet
-Ce projet a pour objetif de créer une plateforme web accessible aux étudiants de l'Université de Montréal. Le but de cette plateforme est de rassembler toute l'information concernant les cours offerts à l'Université afin de simplifier le choix de cours des étudiants. La plateforme contiendra donc de l'information provenant des sources officielles de l'Université de Montréal ainsi que d'autre information provenant des sources non-officielles comme les avis des étudiants sur Discord. 
+Ce projet a pour objetif de créer une plateforme web accessible aux étudiants de l'Université de Montréal. Le but de cette plateforme est de rassembler toute l'information concernant les cours offerts à l'Université afin de simplifier le choix de cours des étudiants. La plateforme contiendra donc de l'information provenant des sources officielles de l'Université de Montréal ainsi que d'autre information provenant des sources non-officielles comme les avis des étudiants sur Discord. Les utilisateurs de la plateforme pourront consulter les différents cours offerts par l'université, comparer les cours entre eux, vérifier qu'ils sont bien éligibles au cours, indiquer ses préférences pour avoir des propositions personnalisées etc. 
 
 ## Échéancier
 
