@@ -1,6 +1,3 @@
----
-title: Analyse des besoins - Risques
----
 
 # Analyse des risques
 
