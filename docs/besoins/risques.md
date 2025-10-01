@@ -25,9 +25,9 @@ title: Analyse des besoins - Risques
 - **Impact**:Élevé
 - **Plan de mitigation**:
   - Avoir un plan structuré pour la gestion du changement de processus
-  -Impliquer le plus de personnel possible pour l'approbation de ce changement
-  -Documenter chaque étape du développement
-  -Faire des points de contrôle réguliers(tests, réunions, consensus de groupe)
+  - Impliquer le plus de personnel possible pour l'approbation de ce changement
+  - Documenter chaque étape du développement
+  - Faire des points de contrôle réguliers(tests, réunions, consensus de groupe)
 
 
 ## Risque 3
@@ -48,9 +48,9 @@ title: Analyse des besoins - Risques
 - **Probabilité** : Faible
 - **Impact** : Élevé
 - **Plan de mitigation**:
-  -Assurer la mise à jour du système lorsque les informations relatives à un cours sont disponibles.
-  -Vérifier l'alignement des informations entre le frontend et le backend.
-  -Vérifier les erreurs de synchronisation qui pourraient engendrer une perte de données.
+  - Assurer la mise à jour du système lorsque les informations relatives à un cours sont disponibles.
+  - Vérifier l'alignement des informations entre le frontend et le backend.
+  - Vérifier les erreurs de synchronisation qui pourraient engendrer une perte de données.
 
 
 
@@ -60,9 +60,9 @@ title: Analyse des besoins - Risques
 - **Probabilité**: Élevée
 - **Impact**: Élevé
 - **Plan de mitigation**:
-  -Avoir une ou plusiquers personnes assigées à la modération des commentaires affichés dans le système
-  -Mettre en place un programme de filtrage des mots qui ne doivent pas faire partie des commentaires(bot filtre les commentaires)
-  -Message sur le discord avisant les usagers de garder les commentaires utiles pour les utilisateurs de la plateforme.
+  - Avoir une ou plusiquers personnes assigées à la modération des commentaires affichés dans le système
+  - Mettre en place un programme de filtrage des mots qui ne doivent pas faire partie des commentaires(bot filtre les commentaires)
+  - Message sur le discord avisant les usagers de garder les commentaires utiles pour les utilisateurs de la plateforme.
 
 
 
@@ -72,9 +72,9 @@ title: Analyse des besoins - Risques
 - **Risque**: Faible
 - **Impact**: Faible
 - **Plan de mitigation**
-  -implémenter un code qui traite les mots/numéros en proposant
+  - Implémenter un code qui traite les mots/numéros en proposant
   ce qui s'en rapproche le plus dans la banque de cours.
-  -Avoir une banque de mot-clés à jour et diversifiée.
-  -S'efforcer d'afficher le plus de choix correspondant à la recherche dans la
+  - Avoir une banque de mot-clés à jour et diversifiée.
+  - S'efforcer d'afficher le plus de choix correspondant à la recherche dans la
   mesure du possible.
 
