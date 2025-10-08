@@ -26,10 +26,19 @@ Pour répondre à ces besoins, les données que nous utiliserons afin d'obtenir 
 
 ### Acteurs
 1. Les étudiants de l'Univeristé de Montréal: 
-    Ils seront les principaux utilisateurs de la plateforme web
+    Ils seront les principaux utilisateurs de la plateforme web. Ils utilisent la plateforme pour les éclairer dans leurs choix de cours.
 
 2. Forums Discords: 
     Discord intéragira avec la plateforme web lorsqu'un étudiant laissera un nouvel avis sur un cours sur un forum. Discord communiquera la nouvelle information à la plateforme web afin que celle-ci l'ajoute à ses données. 
+
+3. Les professeurs de l'Université de Montréal:
+    Ils sont une généralisation de l'étudiant. Ils sont des utilisateurs de la plateforme web mais leur but premier est de chercher les avis concernant leurs propres cours. Ces avis leurs serviront de retour sur leur enseignement afin qu'ils puissent s'améliorer comme professeur. 
+
+4. Les TGDE:
+    Comme le travail des TGDE est de conseiller et orienter l'étudiant dans son parcours étudiant, ils peuvent également consulter la plateforme pour élargir leur connaissance sur les cours offerts. Ils sont, eux-aussi, une généralisation de l'étudiant. 
+
+5. Service d'authentification:
+    C'est un acteur secondaire. Il permet de vérifier la validité de l'authentification et retourne à la plateforme web un signal de succès ou d'échec à chaque authentification. 
 
 ### Personas
 
@@ -51,5 +60,10 @@ Pour répondre à ces besoins, les données que nous utiliserons afin d'obtenir 
 
 ## Hypothèses et contraintes
 
-1. 
-TODO: Liste des hypothèses de travail et des contraintes (techniques, organisationnelles, etc.).
+1. Chaque étudiant utilsisera son UNIP et le même mot de passe que sur Studium pour se connecter.
+2. Les étudiants auront n'auront pas besoin de créé un compte, les comptes sont automatiquement créés avec l'inscription à l'université.
+3. Avant toute action sur la plateforme, l'étudiant doit s'authentifier. L'authentification se fera avec l'aide d'un service d'authentification. 
+4. Pour être capable d'accéder à la plateforme, l'utilisateur doit obligatoirement être un étudiant ou un membre du personnel de l'université de Montréal. 
+5. Lorsqu'un nouvel avis à propos d'un cours sera déposé sur Discord, ce dernier produira une notification qui sera envoyé à la plateforme, permettant à celle-ci d'ajouter cet avis dans sa base de donnée.
+6. L'étudiant pourra changer ses préférences et personnaliser son profil en tout temps. Il suffira de cliquer sur l'icône d'utilisateur en haut à droite et il arrivera sur une page qui lui permet de le faire. 
+7. Les résultats d'une recherche de cours seront montrés en ordre de pertinence pour l'étudiant. L'étudiant pourra filtrer ses recherches. Par exemple, il pourra les faire apparaître en ordre de charge de travail, de meilleurs résultats, etc. 
