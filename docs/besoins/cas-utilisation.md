@@ -19,7 +19,7 @@ L'application de gestion d'horaire scolaire permet aux étudiants, professeurs e
 | CU05 | Consulter info du cours | Étudiant, Professeur, TGDE | L'utilisateur consulte les détails du cours sélectionné |
 | CU06 | Vérifier éligibilité au cours| Étudiant, TGDE| L'utilisateur vérifie s'il est éligible à s'inscrire au cours. |
 | CU07 | Consulter avis étudiant | Étudiant, Professeur| L'utilisateur consulte les avis étudiants du cours. |
-| CU08 | Consulter résultats académiques | Étudiant, TGDE| L'utilisateur consulte ses résultats académiques. |
+| CU08 | Consulter résultats antérieurs | Étudiant, TGDE, Professeur| L'utilisateur consulte les résultats antérieurs des élèves précédents. |
 | CU09 | Comparer charge de travail | Étudiant, Professeur  | L'utilisateur compare des cours.  |
 | CU10 | Importer des avis étudiants| Discord | Importe les avis étudiants des cours. |
 
@@ -82,12 +82,12 @@ L'application de gestion d'horaire scolaire permet aux étudiants, professeurs e
 **But** : Consulter les avis étudiants afin d'éclairer la décision de l'utilisateur.   <br>
 
 ### CU08 - Consulter résultats
-**Acteurs** : Étudiant (principal), TGDE<br>
-**Préconditions** : Résultats scolaires de l'étudiant <br>
-**PostConditions** : Affiche résultats scolaire de l'étudiant selon les cours suivit. <br>
+**Acteurs** : Étudiant (principal), TGDE, Professeur<br>
+**Préconditions** : Avoir les données des années/sessions antérieures <br>
+**PostConditions** : Affiche la moyenne des élèves, nombre inscrits et échecs des années précédentes.  <br>
 **Déclencheur** :<br>
 **Dépendances** :   <br>
-**But** : Consulter l'horaire d'un cours, sa charge de travail et l'égibilité de l'étudiants ou ses résultats s'il à déjà été suivi.  <br>
+**But** : Consulter les moyennes et autres données des années antérieurs afin de prendre une décision éclairée.  <br>
 
 ### CU09 - Comparer charge de travail
 **Acteurs** : Étudiant (principal), professeur<br>
