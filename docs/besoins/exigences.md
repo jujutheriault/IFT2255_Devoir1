@@ -76,7 +76,7 @@ Le **bot Discord** permettra de collecter automatiquement les avis étudiants. I
 
 Pour la phase de développement, le matériel local peut suffire. Pour la mise en production, le système sera hébergé sur **DigitalOcean** (droplets) ou **AWS** (EC2), offrant scalabilité, disponibilité et facilité de gestion.
 
----
+
 
 ## 2. Solution de stockage
 
@@ -117,7 +117,7 @@ PostgreSQL a été retenu pour plusieurs raisons :
 - **Contrôle d'accès** : authentification forte et principe du moindre privilège
 - **Anonymisation** : les identifiants étudiants seront anonymisés conformément à la Loi 25
 
----
+
 
 ## 3. Solution d'intégration
 
