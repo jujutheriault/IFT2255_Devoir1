@@ -48,5 +48,5 @@ Le système connecte trois sources :
 
 - **API Planifium** : données officielles des cours (externe)
 - **Bot Discord** : collecte des avis étudiants (externe)
-- **Notre plateforme** : agrège et affiche tout ça de façon claire pour aider l'étudiant à choisir
+- **Notre plateforme** : affiche tout de façon claire pour aider l'étudiant à choisir
 
