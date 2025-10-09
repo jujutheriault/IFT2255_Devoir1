@@ -47,4 +47,7 @@ TODO: Identifier les exigences critiques.
 - Serveur Web : Nginx + Gunicorn (pour une app Python, par exemple).
 - Framework principal : [À spécifier selon le projet].
 
-<!-- TODO: Compléter selon le stack technique prévu. -->
+Besoins matériels, stockage et intégration
+### 1. Matériel requis
+
+
