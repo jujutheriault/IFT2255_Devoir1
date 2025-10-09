@@ -52,117 +52,72 @@ TODO: Identifier les exigences critiques.
 
 ## 1. Matériel requis
 
-Le système repose sur trois éléments principaux : un serveur web, une base de données et un bot Discord.
+On aura besoin de trois éléments : un serveur web, un serveur de base de données et un bot Discord.
 
-### Serveur web
+### Serveur web et application
 
-Le **serveur web** permettra d'héberger l'application et de gérer les requêtes provenant des utilisateurs ou des autres systèmes. Il fonctionnera sur un environnement **Linux (Ubuntu Server 22.04 LTS)**, avec **Nginx** comme serveur HTTP et **FastAPI (Python 3.11)** comme framework backend pour l'API REST.
+L'application tournera sur **Ubuntu Server 22.04** avec **Nginx** et **FastAPI (Python 3.11+)**. On a choisi Python parce que toute l'équipe le connaît déjà, et FastAPI génère automatiquement la documentation de l'API (Swagger), ce qui va nous faciliter la vie pour travailler ensemble.
 
-**Justification des choix :**
-
-- **Linux Ubuntu Server** : stabilité, sécurité et support à long terme (LTS)
-- **Nginx** : hautes performances, faible consommation de ressources et excellente gestion de la concurrence
-- **FastAPI** : développement rapide d'API REST, validation des données intégrée et performances élevées
-
-### Serveur de base de données
-
-Le **serveur de base de données** sera utilisé pour stocker et organiser les informations. Il sera hébergé sur un serveur séparé pour de meilleures performances, une sécurité accrue et une gestion facilitée des sauvegardes.
-
-### Bot Discord
-
-Le **bot Discord** permettra de collecter automatiquement les avis étudiants et pourra être hébergé sur le même serveur que l'application selon les ressources disponibles.
+Le serveur de base de données sera sur une machine séparée - c'est plus sûr et ça simplifie les sauvegardes. Pour le bot Discord, on va probablement le mettre sur le même serveur que l'application pour commencer. Si on voit que ça rame, on pourra toujours le séparer après.
 
 ### Hébergement
 
-Le système sera hébergé sur une **infrastructure cloud** (AWS ou Google Cloud) pour bénéficier de la scalabilité, de la haute disponibilité et de la facilité de gestion. Durant la phase de développement, un environnement local pourra être utilisé.
+Pour développer et tester, on va utiliser nos propres ordinateurs. Mais pour la version finale (production), on va héberger ça sur AWS ou Google Cloud - ça dépendra des crédits étudiants qu'on peut obtenir. L'avantage du cloud, c'est qu'on pourra ajouter des ressources facilement si jamais plein d'étudiants utilisent la plateforme en même temps.
 
+---
 
 ## 2. Solution de stockage
 
-Le projet utilisera une base de données relationnelle **PostgreSQL 15** pour gérer l'ensemble des données du système.
+On a décidé d'utiliser juste **PostgreSQL 15+** comme base de données. Ça simplifie tout au lieu de gérer plusieurs systèmes différents.
 
-### Types de données stockées
+### Ce qu'on va stocker
 
-**Données structurées :**
+Il y a trois types de données principales :
 
-- Informations sur les cours, horaires, programmes, prérequis et co-requis provenant de l'API Planifium
-- Résultats académiques : moyennes de cours, nombre d'inscrits, taux d'échec
+**Les infos académiques** de Planifium (cours, horaires, programmes, prérequis). C'est le cœur du système, donc ça doit être bien structuré.
 
-**Avis étudiants :**
+**Les avis des étudiants** via Discord. Même si ça vient de Discord, les avis suivent quand même une structure claire : code de cours, note de difficulté (1-5), charge de travail (1-5), et un commentaire optionnel. Donc pas besoin d'une base NoSQL pour ça.
 
-- Évaluations de difficulté et charge de travail collectées via Discord
-- Bien que ces données proviennent d'une source externe, elles suivent une structure définie (code cours, notes, commentaire, trimestre) qui s'intègre naturellement dans PostgreSQL
+**Les profils étudiants** avec leurs préférences. Pour cette partie qui est plus variable (les centres d'intérêt peuvent changer), on utilisera le format JSON que PostgreSQL supporte nativement.
 
-**Profils étudiants :**
+### Pourquoi juste PostgreSQL ?
 
-- Préférences et caractéristiques des utilisateurs
-- Utilisation du support JSON de PostgreSQL pour les données flexibles
+Au début, on s'est demandé si on devrait utiliser MongoDB pour les avis Discord. Mais finalement, ça aurait juste compliqué les choses :
 
-### Justification du choix PostgreSQL
+- Les avis doivent être liés aux cours et aux profils → il faut des relations entre les tables
+- On doit calculer des moyennes et compter les avis (minimum 5 pour afficher) → c'est beaucoup plus simple en SQL
+- Gérer deux bases de données différentes = plus de travail de maintenance
 
-- **Relations complexes** : gestion native des dépendances entre cours (prérequis, co-requis)
-- **Agrégations avancées** : calculs de moyennes, comptages (n≥5 pour affichage des avis), statistiques
-- **Intégrité des données** : contraintes et validation au niveau de la base de données
-- **Support JSON** : flexibilité pour les données semi-structurées sans compromettre la structure relationnelle
-- **Open-source et mature** : communauté active, documentation complète, fiabilité éprouvée
-- **Conformité** : facilite le respect de la Loi 25 (journalisation, droit à l'oubli)
+En plus, PostgreSQL nous aide pour la conformité à la Loi 25 (on doit pouvoir supprimer les données d'un étudiant s'il le demande, tracer les accès, etc.).
 
-### Sauvegardes et sécurité
+### Sécurité et sauvegardes
 
-- **Sauvegardes automatiques quotidiennes** avec rétention de 30 jours
-- **Chiffrement** : SSL/TLS pour les communications, chiffrement au repos pour les données sensibles
-- **Contrôle d'accès** : authentification forte et principe du moindre privilège
-- **Anonymisation** : les identifiants étudiants seront anonymisés conformément à la Loi 25
+On va configurer des sauvegardes automatiques tous les jours (gardées 30 jours). Les communications seront chiffrées avec SSL/TLS. Les identifiants des étudiants seront anonymisés dès qu'on les reçoit - on ne garde que ce qui est nécessaire.
 
-
+---
 
 ## 3. Solution d'intégration
 
-L'intégration des différentes sources de données se fera à l'aide d'une **API REST** développée avec FastAPI.
+Tout passe par une API REST qu'on développe avec FastAPI. C'est l'interface centrale qui connecte tout ensemble.
 
-### Architecture d'intégration
+### Comment ça marche
 
-**API Planifium → Système**
+**Planifium → Notre système**  
+Tous les jours (la nuit, vers 2h du matin), un script va chercher les dernières infos de cours sur Planifium. Il compare avec ce qu'on a déjà en base pour voir ce qui a changé (nouveaux cours, horaires modifiés, etc.) et met à jour la base de données.
 
-- **Synchronisation périodique** (quotidienne via tâche planifiée)
-- Récupération des informations de cours, horaires et programmes
-- Transformation des données au format interne
-- Mise à jour dans PostgreSQL avec détection des changements
+**Discord → Notre système**  
+Quand un étudiant donne un avis sur Discord, le bot vérifie tout de suite que c'est valide (le cours existe ? les notes sont entre 1 et 5 ?). Si c'est bon, l'avis est envoyé à l'API et sauvegardé. L'étudiant reçoit une confirmation sur Discord.
 
-**Bot Discord → Système**
+**Utilisateurs → Notre système**  
+Les étudiants accèdent à l'API pour chercher des cours, voir les avis, comparer des cours, etc. On utilisera des tokens JWT pour l'authentification et on limitera le nombre de requêtes pour éviter les abus.
 
-- **Collecte en temps réel** des avis étudiants
-- Validation immédiate des données (format, cours existant)
-- Envoi vers l'API REST pour traitement et stockage
-- Confirmation à l'utilisateur Discord
+### Gestion des problèmes
 
-**Utilisateurs → Système**
+Si Planifium est down temporairement, pas de panique - on garde les dernières données qu'on avait et le système continue de fonctionner. On reçoit une alerte par courriel et le script réessaie automatiquement 3 fois (avec des pauses entre les essais).
 
-- Authentification via tokens JWT
-- Rate limiting pour prévenir les abus
-- Réponses en format JSON
+Tous les échanges sont enregistrés dans des logs. C'est utile si on doit debugger quelque chose, et c'est aussi requis par la Loi 25.
 
-### Processus de traitement
+### Évolution future
 
-1. **Récupération** : les données sont obtenues depuis Planifium ou Discord
-2. **Validation** : vérification de la structure, cohérence et intégrité
-3. **Transformation** : nettoyage, normalisation et enrichissement des données
-4. **Stockage** : insertion dans PostgreSQL avec vérification des contraintes
-5. **Confirmation** : retour d'information sur le succès ou l'échec de l'opération
-
-### Gestion des erreurs
-
-- **Journalisation complète** : tous les échanges sont enregistrés pour audit
-- **Retry automatique** : en cas d'échec temporaire (3 tentatives avec délai croissant)
-- **Alertes** : notification des administrateurs en cas d'erreur persistante
-- **Conservation des dernières données valides** : le système reste opérationnel même si une source externe est indisponible
-
-### Avantages de cette solution
-
-- **Centralisation** : toutes les données accessibles via une seule interface
-- **Fiabilité** : mécanismes de validation et de récupération d'erreurs
-- **Traçabilité** : journalisation complète des opérations
-- **Évolutivité** : architecture modulaire permettant l'ajout de nouvelles sources
-- **Sécurité** : chiffrement, authentification et contrôle d'accès à tous les niveaux
-
+Si plus tard on veut ajouter d'autres sources de données (genre les évaluations du Guide des étudiants), ce sera facile - on ajoute juste un nouveau module sans toucher au reste. Pareil si on fait une app mobile : elle utilisera la même API que le site web.
 
