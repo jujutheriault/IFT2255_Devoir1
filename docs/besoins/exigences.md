@@ -59,11 +59,11 @@ On aura besoin de trois éléments : un serveur web, un serveur de base de donn�
 
 L'application sera hébergé sur un serveur **Ubuntu Server 22.04** avec **Nginx** et **FastAPI (Python 3.11+)**.
 
-Le serveur de base de données sera sur une machine séparée  car c'est plus sûr et ça simplifie les sauvegardes. Pour le bot Discord, on va le mettre sur le même serveur que l'application pour commencer.
+Le serveur de base de données sera séparé  car c'est plus sûr et ça simplifie les sauvegardes. Pour le bot Discord, on va le mettre sur le même serveur que l'application pour commencer.
 
 ### Hébergement
 
-Pour la version finale (production), on va héberger ça sur AWS ou Google Cloud. L'avantage du cloud, c'est qu'on pourra ajouter des ressources facilement si jamais plein d'étudiants utilisent la plateforme en même temps.
+Pour la version finale (production), on va l'héberger sur AWS ou Google Cloud. L'avantage du cloud, c'est qu'on pourra ajouter des ressources facilement si jamais plein d'étudiants utilisent la plateforme en même temps.
 
 
 ## 2. Solution de stockage
@@ -80,10 +80,10 @@ Il y a trois types de données principales :
 
 **Les profils étudiants** avec leurs préférences. Pour cette partie qui est plus variable (les centres d'intérêt peuvent changer), on utilisera le format JSON que PostgreSQL supporte nativement.
 
-### Pourquoi juste PostgreSQL ?
+### Pourquoi PostgreSQL ?
 
-- Les avis doivent être liés aux cours et aux profils → il faut des relations entre les tables
-- On doit calculer des moyennes et compter les avis (minimum 5 pour afficher) → c'est beaucoup plus simple en SQL
+- Les avis doivent être liés aux cours et aux profils ; il faut des relations entre les tables
+- On doit calculer des moyennes et compter les avis (minimum 5 pour afficher) ; c'est beaucoup plus simple en SQL
 - Gérer deux bases de données différentes = plus de travail de maintenance
 
 En plus, PostgreSQL nous aide pour la conformité à la Loi 25 (on doit pouvoir supprimer les données d'un étudiant s'il le demande, tracer les accès, etc.).
@@ -91,7 +91,6 @@ En plus, PostgreSQL nous aide pour la conformité à la Loi 25 (on doit pouvoir 
 ### Sécurité et sauvegardes
 
 On va configurer des sauvegardes automatiques tous les jours (gardées 30 jours). Les communications seront chiffrées avec SSL/TLS. Les identifiants des étudiants seront anonymisés dès qu'on les reçoit et on ne garde que ce qui est nécessaire.
-
 
 ## 3. Solution d'intégration
 
