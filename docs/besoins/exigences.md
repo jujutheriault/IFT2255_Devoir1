@@ -98,13 +98,13 @@ Tout passe par une API REST qu'on développe avec FastAPI. C'est l'interface cen
 
 ### Comment ça marche
 
-**Planifium → Notre système**  
+**Planifium**  
 Tous les jours , un script va chercher les dernières infos de cours sur Planifium. Il compare avec ce qu'on a déjà en base pour voir ce qui a changé (nouveaux cours, horaires modifiés, etc.) et met à jour la base de données.
 
-**Discord → Notre système**  
+**Discord**  
 Quand un étudiant donne un avis sur Discord, le bot vérifie tout de suite que c'est valide. Si c'est bon, l'avis est envoyé à l'API et sauvegardé. L'étudiant reçoit une confirmation sur Discord.
 
-**Utilisateurs → Notre système**  
+**Utilisateurs**  
 Les étudiants accèdent à l'API pour chercher des cours, voir les avis, comparer des cours, etc. On utilisera des tokens JWT pour l'authentification et on limitera le nombre de requêtes pour éviter les abus.
 
 
