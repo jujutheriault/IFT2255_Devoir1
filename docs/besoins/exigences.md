@@ -15,12 +15,13 @@ Exemple :
 
 ## Exigences non fonctionnelles
 
-TODO: Contraintes de performance, sécurité, compatibilité, etc.
-
-Exemple :
-
-- [ ] ENF1 : Le système doit répondre en moins de 2 secondes.
-- [ ] ENF2 : L'application doit être compatible avec Chrome et Firefox.
+- [ ] ENF1 : L'application doit être compatible avec Chrome, Firefox et Safari.
+- [ ] ENF2 : L'application doit être compatible avec plusieurs langages pour les étudiants internationaux.
+- [ ] ENF3 : Signaux visuel si erreur dans une étape.
+- [ ] ENF4 : Interface minimale et simple à utiliser.
+- [ ] ENF5 : L'application doit protéger les données confidentielles de l'utilisateur. 
+- [ ] ENF6 : L'application doit avoir une capacité de stockage adéquate.
+- [ ] ENF7 : L'application doit avoir un temps de réponse de moins de 2 secondes. 
 
 ## Priorisation
 
