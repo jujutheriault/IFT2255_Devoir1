@@ -6,25 +6,20 @@ title: Analyse des besoins - Exigences
 
 ## Exigences fonctionnelles
 
-TODO: Liste des fonctions que le système doit accomplir.
-
-Exemple :
-
 - [ ] EF1 : L’utilisateur peut créer un compte.
-- [ ] EF2 : Le système envoie un courriel de confirmation.
+- [ ] EF3 : Le système doit importer les avis étudiants des forums Discord pour les afficher dans la plateforme web. 
 - [ ] EF3 : Le système permet à l'utilisateur de personnaliser son profil.
 - [ ] EF4 : L'utilisateur peut en tout temps aller modifier son profil.
 - [ ] EF5 : Le système enregistre la personnalisation du profil de l'utilisateur.
-- [ ] EF6 : L'utilisateur pour rechercher un cours.
+- [ ] EF6 : L'utilisateur peut rechercher un cours.
 - [ ] EF7 : L'utilisateur peut consulter le tableau de bord d'un cours.
-- [ ] EF8 : L'utilisateur peut comparer les charges de travails entre les cours.
+- [ ] EF8 : L'utilisateur peut comparer les charges de travail entre les cours.
 - [ ] EF9 : Dans le tableau de bord d'un cours, l'utilisateur peut consulter les résultats académiques des cours précédents, les avis des anciens étudiants sur ce cours ainsi que les informations officielles du cours. 
 - [ ] EF10 : Le système doit indiquer à l'utilisateur s'il est éligible ou non au cours. 
-- [ ] EF11 : L'utilisateur doit pouvoir filter sa rechercher (ex: il peut vouloir afficher les résultats des cours qui ont une charge de travail faible, etc..)
-- [ ] EF12 : L'utilisateur doit pouvoir s'authentifier pour avoir accès à toutes les données.
-- [ ] EF13 : Le système doit aller chercher les informations officielles du cours dans l'API planifium.
-- [ ] EF14 : Le système doit aller chercher les résultats académiques antérieurs dans le fichier CSV.
-- [ ] EF15 : Le système doit importer les avis étudiants des forums Discord pour les afficher dans la plateforme web. 
+- [ ] EF11 : L'utilisateur peut filtrer sa rechercher (ex: il peut vouloir afficher les résultats des cours qui ont une charge de travail faible, etc..)
+- [ ] EF12 : L'utilisateur peut s'authentifier pour avoir accès à toutes les données.
+- [ ] EF13 : Le système va chercher les informations officielles du cours dans l'API planifium.
+- [ ] EF14 : Le système va chercher les résultats académiques antérieurs dans le fichier CSV.
 
 ## Exigences non fonctionnelles
 
@@ -38,8 +33,22 @@ Exemple :
 
 ## Priorisation
 
-TODO: Identifier les exigences critiques.
+- [ ] Fonctionnalités essentielles : 
+Les fonctionnalités essentielles sont la recherche de cours et la consultation d'un cours. 
+Pour avoir un minimum d'information sur les cours, les données de l'API sont aussi très importantes.
+- [ ] Fonctionnalités necessaires : 
+Les fonctionnalités nécéssaires sont les informations supplémentaires sur chacun des cours comme les avis des étudiants
+et les résultats des cours antérieurs. De plus, la personnalisation du profil de l'utilisateur est également importante
+afin de proposer à l'étudiant des cours qui conviennent à ses intérêts et auxquels il est éligible.
+- [ ] Fonctionnalités importantes : 
+La fonctionnalité qui permet de comparer les cours est importante pour aider l'utilisateur à choisir ses cours et pour répondre à 
+la demande du client. Il est aussi important de permettre à l'utilisateur de se créer un compte et de s'authentifier afin de 
+garder les personnalisations faites sur son profil enregistrées dans le système.
+- [ ] Améliorations majeures : 
+Une amélioration majeure est le filtrage après une recherche. Les recherches de l'utilisateurs deviendront plus rapides s'il peut décider de faire apparaître seulement les cours qui lui conviennent. Par exemple, s'il cherche un cours de mathématique dont la charge de travail n'est pas trop lourde, il peut filtrer sa recherche pour ne faire qu'apparaître les cours de mathématique qui ont une charge de travail faible. 
+- [ ] Améliorations mineures : Tout ce qui concerne le design esthétique de l'application comme les formes et les couleurs.
 
+ 
 ## Types d'utilisateurs
 
 > Identifier les différents profils qui interagiront avec le système.
@@ -47,8 +56,12 @@ TODO: Identifier les exigences critiques.
 | Type d’utilisateur | Description | Exemples de fonctionnalités accessibles |
 |--------------------|-------------|------------------------------------------|
 | Utilisateur invité | Accès limité, pas d’authentification | Consultation des ressources |
-| Utilisateur authentifié | Compte personnel, fonctions principales | Réservation, historique |
+| Utilisateur authentifié | Compte personnel, fonctions principales | Historique, personnalisation du profil. information sur l'eligibilité |
 | Administrateur | Droits étendus, gestion des ressources | Création/suppression de ressources, gestion des utilisateurs |
+| Étudiant| Type d'utilisateur authentifié | Historique, personnalisation du profil, information sur l'eligibilité |
+| Professeur| Type d'utilisateur authentifié| Historique, consultation des avis sur les cours dont il est l'enseignant |
+| TGDE| Type d'utilisateur authentifié | Historique, accès aux informations sur les cours qui peuvent l'aider dans son travail|
+| Futur étudiant | Type d'utilisateur invité | Consultation des ressources, il peut vouloir consulter les cours offerts et les avis pour l'aider à faire son choix d'Université |
 
 <!-- TODO: Détailler selon le périmètre du projet. -->
 

@@ -63,7 +63,8 @@ Pour répondre à ces besoins, les données que nous utiliserons afin d'obtenir 
 1. Chaque étudiant utilsisera son UNIP et le même mot de passe que sur Studium pour se connecter.
 2. Les étudiants auront n'auront pas besoin de créé un compte, les comptes sont automatiquement créés avec l'inscription à l'université.
 3. Avant toute action sur la plateforme, l'étudiant doit s'authentifier. L'authentification se fera avec l'aide d'un service d'authentification. 
-4. Pour être capable d'accéder à la plateforme, l'utilisateur doit obligatoirement être un étudiant ou un membre du personnel de l'université de Montréal. 
-5. Lorsqu'un nouvel avis à propos d'un cours sera déposé sur Discord, ce dernier produira une notification qui sera envoyé à la plateforme, permettant à celle-ci d'ajouter cet avis dans sa base de donnée.
-6. L'étudiant pourra changer ses préférences et personnaliser son profil en tout temps. Il suffira de cliquer sur l'icône d'utilisateur en haut à droite et il arrivera sur une page qui lui permet de le faire. 
-7. Les résultats d'une recherche de cours seront montrés en ordre de pertinence pour l'étudiant. L'étudiant pourra filtrer ses recherches. Par exemple, il pourra les faire apparaître en ordre de charge de travail, de meilleurs résultats, etc. 
+4. Pour être capable d'accéder à la plateforme complète, l'utilisateur doit obligatoirement être un étudiant ou un membre du personnel de l'université de Montréal. 
+5. Pour les futurs étudiants, comme ils ne sont pas encore inscrits à l'Université, ils pourront quand même avoir accès à une partie de la plateforme web mais ne pourront pas personnaliser leur profil. 
+6. Lorsqu'un nouvel avis à propos d'un cours sera déposé sur Discord, ce dernier produira une notification qui sera envoyé à la plateforme, permettant à celle-ci d'ajouter cet avis dans sa base de donnée.
+7. L'étudiant pourra changer ses préférences et personnaliser son profil en tout temps. Il suffira de cliquer sur l'icône d'utilisateur en haut à droite et il arrivera sur une page qui lui permet de le faire. 
+8. Les résultats d'une recherche de cours seront montrés en ordre de pertinence pour l'étudiant. L'étudiant pourra filtrer ses recherches. Par exemple, il pourra les faire apparaître en ordre de charge de travail, de meilleurs résultats, etc. 
