@@ -12,47 +12,41 @@ Décrire les flux d’interaction entre les acteurs et le système.
 
 ![Alt text](../Diagramme_activité.png)
 
-### Description des flux complexes
+# Flux d'activités principal
 
-### Connexion et accès au menu principal
+## Connexion et navigation
 
-L’utilisateur (étudiant) commence par se connecter à la plateforme. Une fois l’authentification réussie, le système affiche le menu principal, qui constitue le point d’entrée vers les différentes fonctionnalités offertes : recherche, personnalisation du profil, comparaison de cours ou déconnexion.
+L'étudiant se connecte à la plateforme avec son compte. Une fois connecté, il arrive sur le menu principal où il peut choisir quoi faire : chercher des cours, modifier son profil, comparer des cours ou se déconnecter.
 
-### Personnalisation du profil
+## Profil étudiant
 
-Si l’étudiant choisit de personnaliser son profil.Une fois les informations enregistrées, le profil est mis à jour et l’utilisateur est redirigé vers le menu principal.
+Si l'étudiant veut personnaliser son profil (préférences théorie/pratique, centres d'intérêt, etc.), il peut le faire depuis le menu. Les changements sont sauvegardés et il revient au menu principal après.
 
-### Recherche et consultation des cours
+## Recherche de cours
 
-Lorsque l’étudiant choisit de rechercher un cours, la plateforme envoie une demande de récupération des données officielles à l’API Planifium.
-Cette dernière renvoie les informations officielles du cours.La plateforme affiche ensuite les détails du cours à l’utilisateur.
+Quand l'étudiant cherche un cours (par code ou mots-clés), la plateforme interroge l'API Planifium pour récupérer les infos officielles : titre, crédits, prérequis, horaires. Les résultats s'affichent avec les détails du cours.
 
-### Consultation des avis et résultats
+## Consultation détaillée
 
-Une fois le cours sélectionné, l’étudiant peut consulter différentes informations complémentaires :
+Pour un cours qui l'intéresse, l'étudiant peut voir :
 
-Résultats académiques : la plateforme affiche la moyenne, le nombre d’inscrits et le taux d’échec à partir des données internes.
-Avis étudiants : une requête est envoyée à Discord pour récupérer les commentaires publiés par les étudiants. Ces avis sont ensuite traités et affichés sur la plateforme.
-Éligibilité : l’étudiant peut vérifier l'éligibilité au cours.
+- **Résultats académiques** : moyenne du cours, nombre d'étudiants inscrits, taux d'échec (données stockées dans notre base)
+- **Avis étudiants** : commentaires et notes de difficulté/charge de travail collectés via Discord (affichés seulement si au moins 5 avis)
+- **Éligibilité** : vérification automatique si l'étudiant remplit les prérequis
 
-### Gestion du panier de cours
+## Panier et comparaison
 
-L’utilisateur peut ensuite ajouter le cours consulté dans son panier de cours afin de planifier ou comparer plusieurs options.
-Le système garde une trace des cours ajoutés et permet à l’étudiant de consulter l’état de son panier à tout moment.
+L'étudiant peut ajouter des cours dans un panier pour les comparer plus tard. Quand il a plusieurs cours dans son panier, il peut lancer une comparaison qui affiche côte à côte : la charge de travail totale, les difficultés, les horaires qui se chevauchent, etc. Ça l'aide à choisir sa combinaison de cours pour la session.
 
-### Comparaison des cours
+## Fin de session
 
-Lorsque le panier contient plusieurs cours, l’étudiant peut lancer une comparaison.
-La plateforme agrège les données (résultats, charge de travail perçue, difficultés, etc.) pour aider l’étudiant à évaluer la combinaison la plus adaptée à lui.
+À tout moment, l'étudiant peut revenir au menu principal ou se déconnecter. Sa session se termine et les données temporaires (comme le panier) sont effacées.
 
-### Fin de session et déconnexion
+## Vue d'ensemble de l'intégration
 
-Une fois la consultation terminée, l’utilisateur choisit de revenir au menu principal ou de se déconnecter.
-La session prend alors fin et le système revient à l’état initial, prêt à accueillir une nouvelle connexion.
+Le système connecte trois sources :
 
-### Interaction globale entre les systèmes
-
-L’API Planifium fournit les données officielles sur les cours.
-Discord sert de source pour les avis étudiants, gérés via un bot.
-La plateforme web centralise, agrège et affiche toutes ces informations à l’étudiant.
+- **API Planifium** : données officielles des cours (externe)
+- **Bot Discord** : collecte des avis étudiants (externe)
+- **Notre plateforme** : agrège et affiche tout ça de façon claire pour aider l'étudiant à choisir
 
