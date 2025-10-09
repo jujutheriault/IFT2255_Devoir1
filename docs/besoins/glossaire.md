@@ -19,7 +19,9 @@ Ce glossaire définit les termes importants utilisés dans le projet, en particu
 | Module | Modèle de répartition des grandes lignes du programme |
 | Middleware | logiciel tiers qui crée un réseau d'échange d'informations entre différentes applications informatiques, la plupart du temps à distance. |
 | Modèle vue-contrôleur | Motif d'architecture logicielle destiné aux interfaces graphiques. Sépare le programme enter l'interface,ce que l'utilisateur voit, et les actions du programme engendré par les choix de l'utilisateur.On utilise aussi l'abbréviation MVC |
-| API Planifium |  |
-| Discord |  |
-|  |  |
-|  |  |
+| API Planifium | Service API qui garde en base de données les cours de l'Université de Montréal. Contient l'information pour construire la liste des cours que l'étudiant souhaite construire. |
+| Discord | Plateforme de communication où la communauté étudiante peut laisser des commentaires qui seront utilisés pour l'application. |
+| Avis étudiant | Message laissé sur discord qui peut être utilisé pour la plateforme si elle répond au critères de pertinence. |
+| Cours préalable | Cours à réussir pour pouvoir choisir et entreprendre un autre cours.Le cours préalable est indiqué dans la description des cours. |
+| Fichier csv | Format du fichier de la base de donnée des résultats agrégés des cours de l'Université de Montréal |
+| Résultat agrégé | Résultats officiels des cours de l'université de Montréal. Les résultats agrégés contiennent la moyenne d'un cours, le nombre d'inscrits et le nombre d'échecs. |
