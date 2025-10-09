@@ -56,7 +56,7 @@ Le système repose sur trois éléments principaux : un serveur web, une base de
 
 ### Serveur web
 
-Le **serveur web** permettra d'héberger l'application et de gérer les requêtes provenant des utilisateurs ou des autres systèmes. Il fonctionnera sur un environnement **Linux (Ubuntu Server 22.04 LTS)**, avec **Nginx** comme serveur HTTP et **FastAPI (Python 3.11+)** comme framework backend pour l'API REST.
+Le **serveur web** permettra d'héberger l'application et de gérer les requêtes provenant des utilisateurs ou des autres systèmes. Il fonctionnera sur un environnement **Linux (Ubuntu Server 22.04 LTS)**, avec **Nginx** comme serveur HTTP et **FastAPI (Python 3.11)** comme framework backend pour l'API REST.
 
 **Justification des choix :**
 
@@ -79,7 +79,7 @@ Le système sera hébergé sur une **infrastructure cloud** (AWS ou Google Cloud
 
 ## 2. Solution de stockage
 
-Le projet utilisera une base de données relationnelle **PostgreSQL 15+** pour gérer l'ensemble des données du système.
+Le projet utilisera une base de données relationnelle **PostgreSQL 15** pour gérer l'ensemble des données du système.
 
 ### Types de données stockées
 
