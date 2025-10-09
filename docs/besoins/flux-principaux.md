@@ -14,15 +14,15 @@ Décrire les flux d’interaction entre les acteurs et le système.
 
 ### Description des flux complexes
 
-1. Connexion et accès au menu principal**
+### Connexion et accès au menu principal
 
 L’utilisateur (étudiant) commence par se connecter à la plateforme. Une fois l’authentification réussie, le système affiche le menu principal, qui constitue le point d’entrée vers les différentes fonctionnalités offertes : recherche, personnalisation du profil, comparaison de cours ou déconnexion.
 
-2. Personnalisation du profil
+### Personnalisation du profil
 
 Si l’étudiant choisit de personnaliser son profil.Une fois les informations enregistrées, le profil est mis à jour et l’utilisateur est redirigé vers le menu principal.
 
-3. Recherche et consultation des cours
+### Recherche et consultation des cours
 
 Lorsque l’étudiant choisit de rechercher un cours, la plateforme envoie une demande de récupération des données officielles à l’API Planifium.
 Cette dernière renvoie les informations officielles du cours.La plateforme affiche ensuite les détails du cours à l’utilisateur.
