@@ -62,7 +62,7 @@ Le **serveur web** permettra d'héberger l'application et de gérer les requête
 
 - **Linux Ubuntu Server** : stabilité, sécurité et support à long terme (LTS)
 - **Nginx** : hautes performances, faible consommation de ressources et excellente gestion de la concurrence
-- **FastAPI** : développement rapide d'API REST, documentation automatique (Swagger/OpenAPI), validation des données intégrée et performances élevées grâce à l'asynchrone
+- **FastAPI** : développement rapide d'API REST, validation des données intégrée et performances élevées
 
 ### Serveur de base de données
 
