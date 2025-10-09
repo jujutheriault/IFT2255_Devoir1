@@ -12,6 +12,19 @@ Exemple :
 
 - [ ] EF1 : L’utilisateur peut créer un compte.
 - [ ] EF2 : Le système envoie un courriel de confirmation.
+- [ ] EF3 : Le système permet à l'utilisateur de personnaliser son profil.
+- [ ] EF4 : L'utilisateur peut en tout temps aller modifier son profil.
+- [ ] EF5 : Le système enregistre la personnalisation du profil de l'utilisateur.
+- [ ] EF6 : L'utilisateur pour rechercher un cours.
+- [ ] EF7 : L'utilisateur peut consulter le tableau de bord d'un cours.
+- [ ] EF8 : L'utilisateur peut comparer les charges de travails entre les cours.
+- [ ] EF9 : Dans le tableau de bord d'un cours, l'utilisateur peut consulter les résultats académiques des cours précédents, les avis des anciens étudiants sur ce cours ainsi que les informations officielles du cours. 
+- [ ] EF10 : Le système doit indiquer à l'utilisateur s'il est éligible ou non au cours. 
+- [ ] EF11 : L'utilisateur doit pouvoir filter sa rechercher (ex: il peut vouloir afficher les résultats des cours qui ont une charge de travail faible, etc..)
+- [ ] EF12 : L'utilisateur doit pouvoir s'authentifier pour avoir accès à toutes les données.
+- [ ] EF13 : Le système doit aller chercher les informations officielles du cours dans l'API planifium.
+- [ ] EF14 : Le système doit aller chercher les résultats académiques antérieurs dans le fichier CSV.
+- [ ] EF15 : Le système doit importer les avis étudiants des forums Discord pour les afficher dans la plateforme web. 
 
 ## Exigences non fonctionnelles
 
