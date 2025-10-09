@@ -10,7 +10,7 @@ Décrire les flux d’interaction entre les acteurs et le système.
 
 ## Diagrammes
 
-TODO: Insérer ici des diagrammes d'activités
+![Alt text](../Diagramme_activité.png)
 
 ### Description des flux complexes
 
