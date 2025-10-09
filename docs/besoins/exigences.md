@@ -70,12 +70,11 @@ Le **serveur de base de données** sera utilisé pour stocker et organiser les i
 
 ### Bot Discord
 
-Le **bot Discord** permettra de collecter automatiquement les avis étudiants. Il sera développé avec **discord.py** (Python) et pourra être hébergé sur le même serveur que l'application selon les ressources disponibles.
+Le **bot Discord** permettra de collecter automatiquement les avis étudiants et pourra être hébergé sur le même serveur que l'application selon les ressources disponibles.
 
 ### Hébergement
 
-Pour la phase de développement, le matériel local peut suffire. Pour la mise en production, le système sera hébergé sur **DigitalOcean** (droplets) ou **AWS** (EC2), offrant scalabilité, disponibilité et facilité de gestion.
-
+Le système sera hébergé sur une **infrastructure cloud** (AWS ou Google Cloud) pour bénéficier de la scalabilité, de la haute disponibilité et de la facilité de gestion. Durant la phase de développement, un environnement local pourra être utilisé.
 
 
 ## 2. Solution de stockage
@@ -97,7 +96,7 @@ Le projet utilisera une base de données relationnelle **PostgreSQL 15+** pour g
 **Profils étudiants :**
 
 - Préférences et caractéristiques des utilisateurs
-- Utilisation du support JSON natif de PostgreSQL pour les données flexibles (centres d'intérêt variables)
+- Utilisation du support JSON natif de PostgreSQL pour les données flexibles
 
 ### Justification du choix PostgreSQL
 
