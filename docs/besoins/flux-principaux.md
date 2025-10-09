@@ -12,7 +12,7 @@ Décrire les flux d’interaction entre les acteurs et le système.
 
 ![Alt text](../Diagramme_activité.png)
 
-# Flux d'activités principal
+# Description du flux d'activités principal
 
 ## Connexion et navigation
 
