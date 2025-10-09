@@ -96,11 +96,9 @@ Le projet utilisera une base de données relationnelle **PostgreSQL 15** pour g�
 **Profils étudiants :**
 
 - Préférences et caractéristiques des utilisateurs
-- Utilisation du support JSON natif de PostgreSQL pour les données flexibles
+- Utilisation du support JSON de PostgreSQL pour les données flexibles
 
 ### Justification du choix PostgreSQL
-
-PostgreSQL a été retenu pour plusieurs raisons :
 
 - **Relations complexes** : gestion native des dépendances entre cours (prérequis, co-requis)
 - **Agrégations avancées** : calculs de moyennes, comptages (n≥5 pour affichage des avis), statistiques
@@ -140,7 +138,6 @@ L'intégration des différentes sources de données se fera à l'aide d'une **AP
 
 **Utilisateurs → Système**
 
-- **API REST publique** avec endpoints documentés (Swagger)
 - Authentification via tokens JWT
 - Rate limiting pour prévenir les abus
 - Réponses en format JSON
