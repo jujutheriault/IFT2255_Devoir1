@@ -57,7 +57,7 @@ On aura besoin de trois éléments : un serveur web, un serveur de base de donn�
 
 ### Serveur web et application
 
-L'application tournera sera hébergé sur un serveur **Ubuntu Server 22.04** avec **Nginx** et **FastAPI (Python 3.11+)**.
+L'application sera hébergé sur un serveur **Ubuntu Server 22.04** avec **Nginx** et **FastAPI (Python 3.11+)**.
 
 Le serveur de base de données sera sur une machine séparée  car c'est plus sûr et ça simplifie les sauvegardes. Pour le bot Discord, on va le mettre sur le même serveur que l'application pour commencer.
 
