@@ -3,15 +3,15 @@
 L'application de gestion d'horaire scolaire sert à aider l'étudiant à prendre une décision éclairée quant à ses choix de cours. Il sera en mesure de consulter les informations globales d'un cours ainsi que les avis des étudiants passés sur la charge de travail, la moyenne de classe ou bien les nombres d'échecs vs. le nombre inscrits. Toutes ces informations seront trouvable à partir d'une recherche ou il y a la possibilité de filtrer et d'ajuster la recherche. Finalement, l'outil permettra de comparer plusieurs cours afin de donné un meilleur visuel à l'étudiant. 
 
 ## Organisation du repertoire
-Le projet est organisé comme suit :
-docs/Images/ : Contient toutes les images et diagrammes. 
-docs/besoins/ : contient les pages modifiés.
-cas-utilisations.md
-exigences.md
-flux-principaux.md
-glossaire.md
-index.md
-risques.md
+Le projet est organisé comme suit : <br>
+docs/Images/ : Contient toutes les images et diagrammes. <br>
+docs/besoins/ : contient les pages modifiés.<br>
+cas-utilisations.md <br>
+exigences.md <br>
+flux-principaux.md <br>
+glossaire.md <br>
+index.md <br>
+risques.md <br>
 
 ## Prérequis
 
