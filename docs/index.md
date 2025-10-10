@@ -29,13 +29,13 @@ Ce projet a pour objetif de créer une plateforme web accessible aux étudiants 
 | Ouverture de projet           | 22 septembre  | ✅ Terminé  | `M1` `M3`   |
 | Description du domaine        | 26 septembre  | ✅ Terminé  | `M1`         |
 | Identification des acteurs    | 24 septembre  | ✅ Terminé  | `M1`         |
-| Glossaire                     | 9 octobre     | ⏳ À venir  | `M2`         |
+| Glossaire                     | 9 octobre     | ✅ Terminé  | `M2`         |
 | Exigences Fonct et Non-Fonct  | 8 octobre     | ✅ Terminé  | `M3` `M4`    |
-| Évaluation des risques        | 9 octobre     | ⏳ À venir  | `M2`         |
+| Évaluation des risques        | 8 octobre     | ✅ Terminé  | `M2`         |
 | Personas                      | 24 septembre  | ✅ Terminé  | `M1`         |
 | Cas d'utilisation             | 26 septembre  | ✅ Terminé  | `M3`         |
 | Diagramme d'activités         | 6 octobre     | ✅ Terminé  | `M4`         |
-| Modèle C4                     | 6 octobre     | ⏳ À venir  | `M2`         |
+| Modèle C4                     | 9 octobre     | ✅ Terminé | `M2`         |
 | Prototype fonctionnel (bonus) | 10 octobre    | ⏳ À venir  | `M4`         |
-| Rapport                       | 10 octobre    | ⏳ À venir  | `M1` `M2` `M3` `M4` |
+| Rapport                       | 10 octobre    | ✅ Terminé | `M1` `M2` `M3` `M4` |
 
