@@ -37,5 +37,5 @@ Ce projet a pour objetif de créer une plateforme web accessible aux étudiants 
 | Diagramme d'activités         | 6 octobre     | ✅ Terminé  | `M4`         |
 | Modèle C4                     | 9 octobre     | ✅ Terminé | `M2`         |
 | Prototype fonctionnel (bonus) | 10 octobre    | ⏳ À venir  | `M4`         |
-| Rapport                       | 10 octobre    | ✅ Terminé | `M1` `M2` `M3` `M4` |
+| Rapport                       | 10 octobre    | ✅ Terminé | `M3`          |
 
