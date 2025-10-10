@@ -15,7 +15,7 @@ title: Vue d'ensemble
 ## Équipe 14
 
 - **`M1`:** Alix Loungnarath (20274695) #alixloungnarath
-- **`M2`:** Vincent Carbonneau (matricule) #volgar5693
+- **`M2`:** Vincent Carbonneau (1023775) #volgar5693
 - **`M3`:** Justine Theriault (20231918) #justine3729 
 - **`M4`:** Membre 4 (matricule) #nom-utilisateur
 
