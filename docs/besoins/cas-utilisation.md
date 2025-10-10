@@ -6,13 +6,15 @@ title: Analyse des besoins - Cas d'utilisation
 
 ## Vue d’ensemble
 
+![Diagramme UML](../Images/UML.png)
+
 L'application de gestion d'horaire scolaire permet aux étudiants, professeurs et TGDE d'acceder aux informations pertinentes d'un cours offert tel que la charge de travail, l'horaire, l'éligbilité ainsi que les résultats académiques. L'application permet aussi de personnaliser le profil afin d'obtenir une expérience personnalisée. La plateforme s'intègre avec un service d'authentification propre à l'université de Montréal et récupère des avis étudiants à partir de Discord afin d'améliorer la prise de décision de l'élève ou bien d'aider le professeur à modifier et ajuster le contenu de son cours selon les commentaires. 
 
 ## Liste des cas d’utilisation
 
 | ID | Nom | Acteurs principaux | Description |
 |----|-----|---------------------|-------------|
-| CU01 | Authentification | Étudiant, Professeur, TGDE, Service d'authentification | L'utilisateur se connecte à l'application via un système d'authentification. |
+| CU01 | Connexion | Étudiant, Professeur, TGDE, Service d'authentification | L'utilisateur se connecte à l'application via un système d'authentification. |
 | CU02 | Personalisation du profil | Étudiant (utilisateur principal) | L'utilisateur créer et modifie son profil étudiant. |
 | CU03 | Recherche de cours|Étudiant, Professeur, TGDE| L'utilisateur entâme une recherche de cours. |
 | CU04 | Filtrer la recherche| Étudiant| L'utilisateur personnalise/filtre sa recherche de cours. |
@@ -25,20 +27,20 @@ L'application de gestion d'horaire scolaire permet aux étudiants, professeurs e
 
 ## Détail
 
-### CU01 - Authentification
+### CU01 - Connexion
 **Acteurs** : Étudiant (principal), professeur, TGDE et service d'authentification<br>
-**Préconditions** : L'utilisateur possède un identifiant ou une adresse courriel scolaire valide (obtenue via service d'authentification).<br>
+**Préconditions** : L'utilisateur possède un identifiant et un mot de passe ou il s'en creer un. <br>
 **PostConditions** : Le système est connecté selon l'utilisateur. <br>
 **Déclencheur** :   Selectionner "Se connecter" <br>
-**Dépendances** :   Service d'authentification de l'udem<br>
-**But** : L'utilisateur s'authentifie dans la plateforme via ses crédits scolaires. <br>
+**Dépendances** :   Service d'authentification<br>
+**But** : L'utilisateur s'authentifie dans la plateforme avec un identifiant et mot de passe s'il veut sauvegarder ses informations (optionel). <br>
 
 ### CU02 - Personalisation du profil
 **Acteurs** : Étudiant (principal), TGDE<br>
 **Préconditions** : La connexion au système doit être réussie.<br>
 **PostConditions** : Présentation des cours et préférences ajustées à l'étudiant. <br>
 **Déclencheur** : L'utilisateur clique sur la pastille de son profil. <br>
-**Dépendances** :   <br>
+**Dépendances** :  L'utilisateur doit être connecté  <br>
 **But** : Ajouter des caractéristiques personnelles à son profil pour une meilleure expérience. <br>
 
 ### CU03 - Recherche de cours
@@ -124,16 +126,38 @@ L'application de gestion d'horaire scolaire permet aux étudiants, professeurs e
 ### CU02 - Personnaliser le profil
 1. L'utilisateur accède son profil. 
 2. Il ajoute/modifie ses informations personnelles. 
-3. Il indique ses préférences visuelles pour l'affichage du tableau de bord. 
-4. Il sauvegarde ses modifications. 
-5. Le système envoie une confirmation visuelle de la mise à jour. 
+3. Il précise quel programme il suit. 
+4. Il indique ses préférences visuelles pour l'affichage du tableau de bord. 
+5. Il sauvegarde ses modifications. 
+6. Le système envoie une confirmation visuelle de la mise à jour. 
 
 **Scénario alternatif**<br>
-4a. L'utlisateur ne sauvegarde pas ses modifications. <br>
-4a.1 Le système envoie un signal visuel qui indique les infos non-enregistrées. 
+5a. L'utlisateur ne sauvegarde pas ses modifications. <br>
+5a.1 Le système envoie un signal visuel qui indique les infos non-enregistrées. <br>
 
 ### CU03 - Recherche de cours 
+1. L'utilisateur accède son profil. 
+2. À partir du tableau de bord, l'utilisateur selectionne "Rechercher des cours".
+3. L'utilisateur parcourt les cours de son programme. 
+
+**Scénario alternatif**<br>
+3a. L'utilisateur n'a pas personnalisé son profil. <br>
+3a.1 Le système envoie un signal visuel d'indiquer soit le programme, le cours recherché ou sujet.<br>
+3a.2 L'utilisateur clique "Enter" pour lancer une nouvelle recherche. <br>
 
 ### CU04 - Filtrer la recherche
+1. L'utilisateur accède son profil. 
+2. À partir du tableau de bord, l'utilisateur sélectionne "Rechercher des cours".
+3. une fois dans la page de recherche l'utilisateur peut effectuer une recherche directement à partir de la barre de recherche, sinon elle selectionne les filtres pré-déterminé.
+4. L'utilisateur sélectionne "nouvelle recherche" pour générer une nouvelle recherche. 
 
 ### CU09 - Comparer charge de travail
+1. L'utilisateur accède son profil. 
+2. À partir du tableau de bord, selectionner "Comparer des cours". 
+3. Le système envoie un signal visuel qui demande de préciser (avec l'aide de filtres) les cours à comparer. 
+4. Une fois les cours tous ajouté, l'étudiant clique "Comparer". 
+
+**Scénario alternatif**<br>
+2a. À partir du tableau de bord, l'utilisateur sélectionne "Rechercher des cours". <br>
+2a.1 Une fois dans la recherche de cours, l'utilisateur sélectionne les différents cours à comparer. <br>
+2a.2 Une fois la selection terminée, l'utilisateur clique sur la fonction "Comparer". <br>
