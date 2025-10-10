@@ -1,6 +1,17 @@
-# Template de site web pour IFT2255
+# Application de gestion d'horaire scolaire
 
-Ce projet est un template pour le rapport à produire pour le cours IFT2255 (Génie logiciel), construit avec [MkDocs](https://www.mkdocs.org/) et le thème [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+L'application de gestion d'horaire scolaire sert à aider l'étudiant à prendre une décision éclairée quant à ses choix de cours. Il sera en mesure de consulter les informations globales d'un cours ainsi que les avis des étudiants passés sur la charge de travail, la moyenne de classe ou bien les nombres d'échecs vs. le nombre inscrits. Toutes ces informations seront trouvable à partir d'une recherche ou il y a la possibilité de filtrer et d'ajuster la recherche. Finalement, l'outil permettra de comparer plusieurs cours afin de donné un meilleur visuel à l'étudiant. 
+
+## Organisation du repertoire
+Le projet est organisé comme suit :
+docs/Images/ : Contient toutes les images et diagrammes. 
+docs/besoins/ : contient les pages modifiés.
+cas-utilisations.md
+exigences.md
+flux-principaux.md
+glossaire.md
+index.md
+risques.md
 
 ## Prérequis
 
@@ -12,63 +23,10 @@ Assurez-vous d’avoir les outils suivants installés :
   - Évite de polluer votre système et les conflits de version.
   - Installez-le avec `pip install pipenv`.
 
-## Pour commencer
-
-### Option 1: Le répertoire n'est pas encore créé
-
-1. Cliquez sur le bouton `Use this template` sur GitHub.
-2. Choisissez l'option `Create a new repository`.
-3. À la fin des étapes, vous devriez avoir un nouveau répertoire avec le contenu du template.
-
-### Option 2: Le répertoire existe déjà
-
-1. Clonez ce dépôt (optionnel) pour obtenir le template localement 
-```bash
-git clone git@github.com:udem-diro/template-rapport-ift2255.git
-```
-2. Copiez les fichiers du template (en local) dans votre répertoire de projet.
-
-> Note : Cette option est utile si vous souhaitez récupérer le contenu du template sans créer un nouveau dépôt (répertoire).
-
-## Installation
-
-> Vous avez maintenant le contenu du template sur votre poste. Il ne reste qu’à installer les dépendances pour commencer à l’utiliser.
-
-1. Activez l'environnement virtuel avec 
-```bash
-pipenv shell
-```
-2. Installez les dépendances listées dans `requirements.txt` (à exécuter dans le répertoire du projet) :
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Utilisation
 
 > Avant toute utilisation, assurez-vous que l’environnement virtuel est activé (`pipenv shell`).
-
-### Développement local
-
-Pour lancer un serveur de développement local et visualiser les modifications en temps réel, utilisez :
-
-```bash
-mkdocs serve
-```
-
-Le site sera accessible à l'adresse [http://127.0.0.1:8000](http://127.0.0.1:8000)
-
-### Construction du site (optionnel)
-
-> Cette étape n’est pas nécessaire pour la publication sur GitHub Pages
-
-Pour construire le site :
-
-```bash
-mkdocs build
-```
-
-Les fichiers générés seront dans le dossier `site/`.
 
 ### Déploiement
 
