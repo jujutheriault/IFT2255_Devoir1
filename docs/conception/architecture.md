@@ -23,5 +23,5 @@ title: Conception - Architecture
 - Format des données : JSON, XML, etc.
 
 ## Diagramme d’architecture (Modèle C4)
-![alt text](C:\Users\Vincent Carbonneau\Desktop\projet_ift2255\IFT2255_Devoir1\docs\C1.jpg)
-![alt text](C:\Users\Vincent Carbonneau\Desktop\projet_ift2255\IFT2255_Devoir1\docs\C2.jpg)
+![](C:\Users\Vincent Carbonneau\Desktop\projet_ift2255\IFT2255_Devoir1\docs\C1.jpg)
+![](C:\Users\Vincent Carbonneau\Desktop\projet_ift2255\IFT2255_Devoir1\docs\C2.jpg)
