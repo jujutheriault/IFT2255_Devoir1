@@ -65,6 +65,10 @@ Pour répondre à ces besoins, les données que nous utiliserons afin d'obtenir 
 3. Avant toute action sur la plateforme, l'étudiant doit s'authentifier. L'authentification se fera avec l'aide d'un service d'authentification. 
 4. Pour être capable d'accéder à la plateforme complète, l'utilisateur doit obligatoirement être un étudiant ou un membre du personnel de l'université de Montréal. 
 5. Pour les futurs étudiants, comme ils ne sont pas encore inscrits à l'Université, ils pourront quand même avoir accès à une partie de la plateforme web mais ne pourront pas personnaliser leur profil. 
-6. Lorsqu'un nouvel avis à propos d'un cours sera déposé sur Discord, ce dernier produira une notification qui sera envoyé à la plateforme, permettant à celle-ci d'ajouter cet avis dans sa base de donnée.
-7. L'étudiant pourra changer ses préférences et personnaliser son profil en tout temps. Il suffira de cliquer sur l'icône d'utilisateur en haut à droite et il arrivera sur une page qui lui permet de le faire. 
-8. Les résultats d'une recherche de cours seront montrés en ordre de pertinence pour l'étudiant. L'étudiant pourra filtrer ses recherches. Par exemple, il pourra les faire apparaître en ordre de charge de travail, de meilleurs résultats, etc. 
+6. Aucune donnée personnelle (nom, matricule, UNIP) ne doit être publiée sans
+anonymisation et les préférences de chaque étudiant ne pourront pas être consultées par un autre étudiant.
+7. L'application web devra être disponible 99% du temps, surtout dans les périodes durant`
+lesquelles la plupart des étuidants procèdent à leurs choix de cours. 
+8. Lorsque nécessaire, la maintenance de l'application web devra se faire durant les heures
+où l'application est le moins utilisée. Par exemple, entre 23h et 5am. 
+
