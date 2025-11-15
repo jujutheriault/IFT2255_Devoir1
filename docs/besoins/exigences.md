@@ -118,9 +118,9 @@ Il y a trois types de données principales :
 
 ### Pourquoi PostgreSQL ?
 
-- Les avis doivent être liés aux cours et aux profils ; il faut des relations entre les tables
-- On doit calculer des moyennes et compter les avis (minimum 5 pour afficher) ; c'est beaucoup plus simple en SQL
-- Gérer deux bases de données différentes = plus de travail de maintenance
+- Les avis doivent être liés aux cours et aux profils ; il faut des relations entre les tables.
+- On doit calculer des moyennes et compter les avis (minimum 5 pour afficher) ; c'est beaucoup plus simple en SQL.
+- Gérer deux bases de données différentes = plus de travail de maintenance.
 
 En plus, PostgreSQL nous aide pour la conformité à la Loi 25 (on doit pouvoir supprimer les données d'un étudiant s'il le demande, tracer les accès, etc.).
 
