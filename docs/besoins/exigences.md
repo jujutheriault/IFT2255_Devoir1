@@ -97,9 +97,9 @@ Pour la version finale (production), on va l'héberger sur AWS ou Google Cloud.
 
 **Avantages**
 
-- Scalabilité automatique : Ajouter des ressources facilement si beaucoup d'étudiants utilisent la plateforme simultanément
-- Haute disponibilité : Garantir que le service reste accessible même en cas de panne d'un serveur
-- Sécurité renforcée : Utiliser les groupes de sécurité et VPC pour isoler les composants
+- Scalabilité automatique : Ajouter des ressources facilement si beaucoup d'étudiants utilisent la plateforme simultanément.
+- Haute disponibilité : Garantir que le service reste accessible même en cas de panne d'un serveur.
+- Sécurité renforcée : Utiliser les groupes de sécurité et VPC pour isoler les composants.
 
 
 ## 2. Solution de stockage
