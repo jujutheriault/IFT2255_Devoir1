@@ -89,7 +89,9 @@ Séparation du serveur de base de données
 Le serveur de base de données sera séparé du serveur web pour les raisons de sécurité suivantes :
 
 Isolation du réseau : Le serveur de base de données sera dans un réseau privé, non accessible publiquement. En cas d'attaque sur le serveur web (exposé publiquement), les attaquants ne pourront pas accéder directement à la base de données.Le serveur web n'aura accès qu'aux opérations strictement nécessaires via des comptes à privilèges limités, réduisant les risques en cas de compromission.
+
 Facilitation des sauvegardes : La séparation permet d'effectuer des sauvegardes de la base de données sans interrompre les services web, et de restaurer les données indépendamment.
+
 Résilience : Si le serveur web tombe ou doit être redémarré, la base de données reste opérationnelle et les données intactes.
 
 ### Hébergement
