@@ -56,17 +56,4 @@
   - Avoir une ou plusiquers personnes assigées à la modération des commentaires affichés dans le système
   - Mettre en place un programme de filtrage des mots qui ne doivent pas faire partie des commentaires(bot filtre les commentaires)
   - Message sur le discord avisant les usagers de garder les commentaires utiles pour les utilisateurs de la plateforme.
-
-
-
-## Risque 6 - Implémentation des critères de recherche pas assez pointue
-- **Probabilité**: Faible
-- **Risque**: Faible
-- **Impact**: Faible
-- **Plan de mitigation**
-  - Implémenter un code qui traite les mots/numéros en proposant
-  ce qui s'en rapproche le plus dans la banque de cours.
-  - Avoir une banque de mot-clés à jour et diversifiée.
-  - S'efforcer d'afficher le plus de choix correspondant à la recherche dans la
-  mesure du possible.
-
+  
