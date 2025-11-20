@@ -86,11 +86,21 @@ On aura besoin de trois éléments : un serveur web, un serveur de base de donn�
 
 L'application sera hébergé sur un serveur **Ubuntu Server 22.04** avec **Nginx** et **FastAPI (Python 3.11+)**.
 
-Le serveur de base de données sera séparé  car c'est plus sûr et ça simplifie les sauvegardes. Pour le bot Discord, on va le mettre sur le même serveur que l'application pour commencer.
+Le serveur de base de données sera séparé du serveur web pour les raisons de sécurité suivantes :
+
+- Isolation du réseau : Le serveur de base de données sera dans un réseau privé, non accessible publiquement. En cas d'attaque sur le serveur web (exposé publiquement), les attaquants ne pourront pas accéder directement à la base de données.Le serveur web n'aura accès qu'aux opérations strictement nécessaires via des comptes à privilèges limités, réduisant les risques en cas de compromission.
+- Facilitation des sauvegardes : La séparation permet d'effectuer des sauvegardes de la base de données sans interrompre les services web, et de restaurer les données indépendamment.
+- Résilience : Si le serveur web tombe ou doit être redémarré, la base de données reste opérationnelle et les données intactes.
 
 ### Hébergement
 
-Pour la version finale (production), on va l'héberger sur AWS ou Google Cloud. L'avantage du cloud, c'est qu'on pourra ajouter des ressources facilement si jamais plein d'étudiants utilisent la plateforme en même temps.
+Pour la version finale (production), on va l'héberger sur AWS ou Google Cloud. 
+
+**Avantages**
+
+- Scalabilité automatique : Ajouter des ressources facilement si beaucoup d'étudiants utilisent la plateforme simultanément.
+- Haute disponibilité : Garantir que le service reste accessible même en cas de panne d'un serveur.
+- Sécurité renforcée : Utiliser les groupes de sécurité et VPC pour isoler les composants.
 
 
 ## 2. Solution de stockage
@@ -109,9 +119,9 @@ Il y a trois types de données principales :
 
 ### Pourquoi PostgreSQL ?
 
-- Les avis doivent être liés aux cours et aux profils ; il faut des relations entre les tables
-- On doit calculer des moyennes et compter les avis (minimum 5 pour afficher) ; c'est beaucoup plus simple en SQL
-- Gérer deux bases de données différentes = plus de travail de maintenance
+- Les avis doivent être liés aux cours et aux profils ; il faut des relations entre les tables.
+- On doit calculer des moyennes et compter les avis (minimum 5 pour afficher) ; c'est beaucoup plus simple en SQL.
+- Gérer deux bases de données différentes = plus de travail de maintenance.
 
 En plus, PostgreSQL nous aide pour la conformité à la Loi 25 (on doit pouvoir supprimer les données d'un étudiant s'il le demande, tracer les accès, etc.).
 
