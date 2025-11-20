@@ -6,7 +6,7 @@ title: Analyse des besoins - Flux principaux
 
 ## Diagrammes
 
-![Alt text](../Images/Diagramme_activité.png)
+![Flux général](../Images/generalFlow.png)
 
 # Description du flux d'activités principal
 
