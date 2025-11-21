@@ -4,13 +4,15 @@ title: Analyse des besoins - Flux principaux
 
 # Flux principaux
 
-## Objectif
+## Flux général
+![Flux général](../Images/generalFlow.png)
+## Consulter les avis des étudiants
+![Flux Avis](../Images/Avis_etudiants.png)
+## Comparer des cours
+![Flux Comparer](../Images/Comparer_cours.png)
+## Rechercher des cours
+![Flux Rechercher](../Images/Rechercher_cours.png)
 
-Décrire les flux d’interaction entre les acteurs et le système.
-
-## Diagrammes
-
-![Alt text](../Diagramme_activité.png)
 
 # Description du flux d'activités principal
 
