@@ -5,7 +5,7 @@ title: Analyse des besoins - Flux principaux
 # Flux principaux
 
 ## Diagrammes
-
+## Flux général
 ![Flux général](../Images/generalFlow.png)
 ## Consulter les avis des étudiants
 ![Flux Avis](../Images/Avis_etudiants.png)
