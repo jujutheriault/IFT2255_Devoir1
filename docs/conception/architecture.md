@@ -1,6 +1,4 @@
----
-title: Conception - Architecture
----
+
 
 # Architecture du système
 
@@ -23,5 +21,6 @@ title: Conception - Architecture
 - Format des données : JSON, XML, etc.
 
 ## Diagramme d’architecture (Modèle C4)
-![C1](../Images/C1.jpg)
-![C2](../Images/C2.jpg)
+![Alt text](../C1.jpg)
+![Alt text](../C2.jpg)
+![Alt text](../C3.jpg)
