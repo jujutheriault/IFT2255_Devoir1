@@ -23,13 +23,14 @@ title: Analyse des besoins - Exigences
 
 ## Exigences non fonctionnelles
 
-- [ ] ENF1 : L'application doit être compatible avec Chrome, Firefox et Safari.
-- [ ] ENF2 : L'application doit être compatible avec plusieurs langages pour les étudiants internationaux.
-- [ ] ENF3 : Signaux visuel si erreur dans une étape.
-- [ ] ENF4 : Interface minimale et simple à utiliser.
-- [ ] ENF5 : L'application doit protéger les données confidentielles de l'utilisateur. 
-- [ ] ENF6 : L'application doit avoir une capacité de stockage adéquate.
-- [ ] ENF7 : L'application doit avoir un temps de réponse de moins de 2 secondes. 
+- [ ] ENF1 : L'application doit être compatible avec Chrome, Firefox et Safari. C'est important puisque les étudiants utilisent tous des navigateurs web différents, il
+ faut donc que la plateforme soit accessibles sur tous ces navigateurs web. 
+- [ ] ENF2 : L'application doit être compatible avec plusieurs langages pour les étudiants internationaux. C'est important puisque les étudiants font partis des utilisateurs cibles de cette application web étant donné qu'ils sont propices à être moins informés du fonctionnement du l'université.
+- [ ] ENF3 : Signaux visuel si erreur dans une étape. Il est important de donné un feedback clair pour rendre l'application plus facile et agréable à utiliser.
+- [ ] ENF4 : Interface minimale et simple à utiliser. PLus une interface est simple, plus elle est facile à mémoriser et utilisable. Comme le but de notre application est de simplifier les choix de cours, c'est important que notre application reste simple d'utilisation.
+- [ ] ENF5 : L'application doit protéger les données confidentielles de l'utilisateur. C'est primordiale afin de respecter la loi et l'utilisateur.
+- [ ] ENF6 : L'application doit avoir une capacité de stockage adéquate. Elle doit permettre de mémoriser les données de chaque utilisateur ainsi que les données concernant chaque cours. 
+- [ ] ENF7 : L'application doit avoir un temps de réponse de moins de 2 secondes. Maintenant que nous sommes habitué à des temps de répponse très rapide, un temps de réponse au-dessus de 2 secondes pourrait décourager l'utilisateur d'utiliser l'application web. De plus, les étudiants sont souvent très occupés et n'ont pas beaucoup de temps à accorder à leur choix de cours. 
 
 ## Priorisation
 
