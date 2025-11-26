@@ -17,13 +17,22 @@ Pour répondre à ces besoins, les données que nous utiliserons afin d'obtenir 
 ## Description du domaine
 
 ### Fonctionnement
-1. Pour consulter les cours offerts à l'Université de Montréal, la liste de tous les cours sur le site de l'Université de Montréal.
-2. Afin de savoir s'ils sont éligibles au cours, les étudiants doivent cliquer sur le cours qui les intéressent puis regarder les préalables du cours. Ils doivent ensuite vérifier qu'ils ont déjà suivi les cours préalable. 
-3. Pour savoir s'ils sont intéressé par un cours et pour connaître la charge de travail associée à ce cours, les étudiants doivent aller fouiller sur des forums où ils trouveront peut-être des commentaires d'élèves aillant déjà fait ce cours. 
+#### Système actuel:
+1. Pour consulter les cours offerts à l'Université de Montréal, les étudiants doivent se
+rendre sur le site de l'université de Montréal, aller dans l'onglet "ÉTUDES", puis sélectionner "PROGRAMMES ET COURS". Ils doivent ensuite rechercher et cliquer sur le programme qui les intéresse pour ensuite cliquer sur "Voir la structure du programme". Une fois fait, ils auront accès à la liste de ce programme et pourront cliquer sur chaque cours pour consulter la description et l'horaire approximatif du cours. 
+2. Pour connaître l'horaire exact et le professeur donnant le cours, l'étudiant doit se rendre dans son centre étudiant, puis aller dans son panier de cours, sélectionner un trimestre puis rechercher ce cours. Il trouvera seulement le cours à cet endroit si le cours ce donne durant le trimestre que l'étudiant a sélectionné. Il pourra enfin voir l'horaire exact et le professeur du cours.
+2. Afin de savoir s'ils sont éligibles au cours, les étudiants doivent cliquer sur le cours qui les intéresse puis regarder les préalables du cours. Ils doivent ensuite vérifier qu'ils ont déjà suivi les cours préalables.
+3. Pour consulter la liste des cours que l'étudiant a déjà suivi, il doit se rendre dans son centre étudiant, cliquer sur l'onglet "Données d'études", puis consulter son relevé de note non-officiel.  
+3. Pour savoir s'ils sont intéressés par un cours et pour connaître la charge de travail associée à ce cours, les étudiants doivent aller fouiller sur plusieurs plateformes différentes comme rateMyProfessor, Reddit, Discord, etc. Ils doivent ensuite espérer trouver un commentaire laissé par un ancien étudiant qui a suivi le même cours avec le même professeur.
 4. Afin de comparer deux cours, les étudiants doivent eux-mêmes dresser des listes de pour et de contre à partir d'information trouvée sur des forums et sur le site de l'Université de Montréal. 
 5. Pour connaître les résultats des cours antérieurs, les étudiants doivent aller chercher l'information à partir de sources officielles de l'Université de Montréal. 
 6. Il n'y a pas de moyen pour que les étudiants se fasse proposer des cours en fonction de leurs préférences. Ils doivent eux-mêmes parcourir toutes leurs options pour répondre à leurs questions. 
-
+#### Problèmes du système actuel:
+1. Le problème majeur est que pour s'aider dans son choix de cours, un étudiant doit consulter plusieurs plateformes différentes comme le centre étudiant, le site de l'université de Montréal, la plateforme du département dans lequel un cours est donnés, etc.
+2. Il est également très difficile pour un étudiant de se renseigner sur la difficulté d'un cours. Sur les plateformes comme rateMyProfessor, les avis peuvent se contredire et certains professeurs n'ont aucun avis, l'étudiant ne peut donc se faire aucune idée de la difficulté du cours. 
+3. Aucun outil n'existe pour aider un étudiant à comparer un ou plusieurs cours entre eux.
+#### Comment notre solution aidera les étudiants:
+Notre solution aidera les étudiants en rassemblant toutes les informations dont ils ont potentiellement besoin dans une seule plateforme. Il leur sera facile de trouver un cours qui leur convient, de consulter les différents professeurs qui le donne et les avis selon ces professeurs, de savoir si l'étudiant est éligible au cours, etc. L'étudiant n'aura plus à naviguer entre plusieurs plateforme web pour trouver réponse à ses questionnements. Il lui sera également possible de comparer les cours et les ensembles de cours entre eux. 
 ### Acteurs
 1. Les étudiants de l'Univeristé de Montréal: 
     Ils seront les principaux utilisateurs de la plateforme web. Ils utilisent la plateforme pour les éclairer dans leurs choix de cours.
