@@ -10,7 +10,7 @@ title: Vue d'ensemble
     }
 </style>
 
-# Platefore Web pour les étudiants de l'université de Montréal
+# Plateforme Web pour les étudiants de l'université de Montréal
 
 ## Équipe 14
 

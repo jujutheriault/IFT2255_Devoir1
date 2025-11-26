@@ -1,6 +1,4 @@
----
-title: Conception - Architecture
----
+
 
 # Architecture du système
 
@@ -25,3 +23,4 @@ title: Conception - Architecture
 ## Diagramme d’architecture (Modèle C4)
 ![Alt text](../C1.jpg)
 ![Alt text](../C2.jpg)
+![Alt text](../C3.jpg)
