@@ -11,8 +11,11 @@ title: Conception - Diagrammes UML
 
 ## Diagrammes de séquence
 
-## Première ébauche - Recherche de cours 
-![Diagramme de séquence 1](../Images/rechercheCours.png)
+## Rechercher un cours 
+![Diagramme de séquence 1](../Images/sequence_rechercher.png)
 
-## Première ébauche - Comparer des cours 
-![Diagramme de séquence 1](../Images/comparerCours.png)
+## Comparer des cours 
+![Diagramme de séquence 2](../Images/sequence_comparaison.png)
+
+## Soumettre un avis
+![Diagramme de séquence 3](../Images/sequence_avis.png)
