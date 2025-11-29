@@ -21,6 +21,6 @@
 - Format des données : JSON, XML, etc.
 
 ## Diagramme d’architecture (Modèle C4)
-![Alt text](../C1.jpg)
-![Alt text](../C2.jpg)
-![Alt text](../C3.jpg)
+![Alt text](../Images/C1.jpg)
+![Alt text](../Images/C2.jpg)
+![Alt text](../Images/C3.jpg)
