@@ -4,7 +4,7 @@
 ## Flux général
 ![Flux général](../Images/generalFlow.png)
 ## Consulter les avis des étudiants
-![Flux Avis](../Images/Avis_etudiants.png)
+![Flux Avis](../Images/Consulter-avis.pngV2)
 ## Comparer des cours
 ![Flux Comparer](../Images/Comparer-coursV2.png)
 ## Rechercher des cours
