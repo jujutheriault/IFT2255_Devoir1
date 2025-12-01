@@ -6,7 +6,7 @@
 ## Consulter les avis des étudiants
 ![Flux Avis](../Images/Avis_etudiants.png)
 ## Comparer des cours
-![Flux Comparer](../Images/Comparer_coursV2.pdf)
+![Flux Comparer](../Images/Comparer-coursV2.png)
 ## Rechercher des cours
 ![Flux Rechercher](../Images/Rechercher_cours.png)
 
