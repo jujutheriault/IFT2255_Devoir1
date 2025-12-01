@@ -1,6 +1,3 @@
----
-title: Analyse des besoins - Flux principaux
----
 
 # Flux principaux
 
