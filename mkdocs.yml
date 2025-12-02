@@ -85,6 +85,7 @@ nav:
     - Architecture: conception/architecture.md
     - Modèle de données: conception/modeles.md
     - Diagrammes UML: conception/uml.md
+    - Tests Unitaires : conception/tests.md
   - Application: application.md
   - Evaluation: evaluation.md
   - Bilan: bilan.md
