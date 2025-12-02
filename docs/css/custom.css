@@ -1,22 +1,16 @@
-custom.css
-
-/* Hide all sidebars */
-/* .md-sidebar {
-    display: none !important;
-} */
-
-/* Hide the section sidebar (on the left) 
+/* Affiche la sidebar sur les grands écrans */
 @media screen and (min-width: 76em) {
-    .md-sidebar--primary {
-        display: none !important;
-    }
+  .md-sidebar--primary {
+    display: block !important;
+  }
 }
-    */
 
-/* Hide the table of contents */
-/* .md-sidebar--secondary {
+/* Cache la sidebar uniquement sur mobile/tablettes */
+@media screen and (max-width: 76em) {
+  .md-sidebar--primary {
     display: none !important;
-} */
+  }
+}
 
 /* Titre dans la barre du haut */
 .md-header__title {
