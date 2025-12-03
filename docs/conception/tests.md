@@ -14,7 +14,7 @@ Les tests suivants valident les principales fonctionnalités de la classe Compar
 
 1) testSelectionnerCoursComparer
 
-Ce que le test fait :
+Description du test :
 Il ajoute un cours dans la comparaison.
 
 Ce qu’on attend :
@@ -25,7 +25,7 @@ Le tableau contient maintenant 1 cours.
 
 2) testDeselectionnerCoursComparer
 
-Ce que le test fait :
+Description du test :
 Il ajoute deux cours, puis en retire un.
 
 Ce qu’on attend :
@@ -37,7 +37,7 @@ Le tableau se décale automatiquement après la suppression.
 
 3) testComparerCours
 
-Ce que le test fait :
+Description du test :
 Il envoie deux cours à comparer en même temps.
 
 Ce qu’on attend :
@@ -48,7 +48,7 @@ Le tableau contient maintenant 2 cours.
 
 4) testCalculerChargeTotale
 
-Ce que le test fait :
+Description du test :
 Il ajoute deux cours avec 3 et 4 crédits.
 
 Ce qu’on attend :
@@ -59,7 +59,7 @@ La méthode fait seulement une lecture, pas de modification.
 
 5) testReinitialiserSelection
 
-Ce que le test fait :
+Description du test :
 Il ajoute un cours et réinitialise la sélection.
 
 Ce qu’on attend :
