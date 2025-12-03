@@ -6,7 +6,6 @@ title: Conception - Diagrammes UML
 
 ## Diagrammes de classes
 
-### Première ébauche 
 ![Diagramme de classe](../Images/diagrammeClasse.png)
 
 ## Diagrammes de séquence

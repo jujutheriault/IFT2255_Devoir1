@@ -1,7 +1,6 @@
 
 
 # Architecture du système
-
 ## Vue d’ensemble
 
 La conception du système utilise une architecture structurée autour d'une séparation claire entre modèle, contrôleurs et vues (MVC), ce qui favorise une compréhension simple du fonctionnement global et une possible évolution simplifiée du logiciel. Elle adopte une architecture en couches exposant une API REST.
@@ -12,8 +11,6 @@ De plus, l'application est facile à tester avec un logiciel comme Postman, ce q
 La séparation en modules permet aussi un couplage faible et une forte cohésion. 
 
 Il est aussi plus facile de détecter les problèmes d'une partie du code avec cette approche contrairement à une architecture monolithique.Une API REST utilise aussi le protocole d'appels HTTP qui fourni une cache intégrée, ce qui améliore les performances de l'application.L'application est aussi plus stable puisque ce type d'architecture est utilisé partout.
-
-
 
 ## Composants principaux
 ### Module d’authentification:
