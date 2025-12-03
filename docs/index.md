@@ -2,14 +2,6 @@
 title: Vue d'ensemble
 ---
 
-<style>
-    @media screen and (min-width: 76em) {
-        .md-sidebar--primary {
-            display: none !important;
-        }
-    }
-</style>
-
 # Plateforme Web pour les étudiants de l'université de Montréal
 
 ## Équipe 14
@@ -35,7 +27,13 @@ Ce projet a pour objetif de créer une plateforme web accessible aux étudiants 
 | Personas                      | 24 septembre  | ✅ Terminé  | `M1`         |
 | Cas d'utilisation             | 26 septembre  | ✅ Terminé  | `M3`         |
 | Diagramme d'activités         | 6 octobre     | ✅ Terminé  | `M4`         |
-| Modèle C4                     | 9 octobre     | ✅ Terminé | `M2`         |
+| Modèle C4                     | 9 octobre     | ✅ Terminé | `M2`          |
 | Prototype fonctionnel (bonus) | 10 octobre    | ⏳ À venir  | `M4`         |
-| Rapport                       | 10 octobre    | ✅ Terminé | `M3`          |
+| Rapport                       | 10 octobre    | ✅ Terminé | `M3`  
+| Révision devoir 1	            | 14 novembre   | ✅ Terminé  | `M1` `M2` `M3` `M4`|
+| Modèle C4 et choix de design	| 28 novembre   | ✅ Terminé  | `M2`         |
+| Diagramme de classe	          | 27 novembre   | ✅ Terminé  | `M3`         |
+| Diagramme de séquence	        | 27 novembre   | ✅ Terminé  | `M1`         |
+| Implémentation	              | 30 novembre   | ✅ Terminé  | `M1` `M2` `M3` `M4`|
+| Tests unitaires	              | 29 novembre   | ✅ Terminé  | `M1` `M3` `M4`|
 
