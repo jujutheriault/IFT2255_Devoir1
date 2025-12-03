@@ -14,30 +14,56 @@ Les tests suivants valident les principales fonctionnalités de la classe Compar
 
 1) testSelectionnerCoursComparer
 
-Description : Vérifie qu’un cours sélectionné est correctement ajouté au tableau de comparaison.
-Retour attendu : cours[0] = c1.
-Effets de bord : taille = 1, première case du tableau modifiée.
+Ce que le test fait :
+Il ajoute un cours dans la comparaison.
+
+Ce qu’on attend :
+Le cours ajouté doit se retrouver à la première position du tableau.
+
+Effet sur le système :
+Le tableau contient maintenant 1 cours.
 
 2) testDeselectionnerCoursComparer
 
-Description : Vérifie que la suppression d’un cours fonctionne et que le tableau se réorganise correctement.
-Retour attendu : cours[0] = c2, cours[1] = null.
-Effets de bord : décalage à gauche, taille réduite de 1.
+Ce que le test fait :
+Il ajoute deux cours, puis en retire un.
+
+Ce qu’on attend :
+Le cours supprimé disparaît, et l’autre prend sa place.
+La deuxième case redevient null.
+
+Effet sur le système :
+Le tableau se décale automatiquement après la suppression.
 
 3) testComparerCours
 
-Description : Vérifie l’ajout simultané de plusieurs cours dans la comparaison.
-Retour attendu : cours[0] = c1 et cours[1] = c2.
-Effets de bord : deux insertions, taille = 2.
+Ce que le test fait :
+Il envoie deux cours à comparer en même temps.
+
+Ce qu’on attend :
+Les deux cours doivent être ajoutés dans l’ordre : d’abord c1, puis c2.
+
+Effet sur le système :
+Le tableau contient maintenant 2 cours.
 
 4) testCalculerChargeTotale
 
-Description : Vérifie que le total des crédits est bien la somme des crédits des cours ajoutés.
-Retour attendu : total = 7.
-Effets de bord : aucun (lecture seule).
+Ce que le test fait :
+Il ajoute deux cours avec 3 et 4 crédits.
+
+Ce qu’on attend :
+La méthode doit retourner 7.
+
+Effet sur le système :
+La méthode fait seulement une lecture, pas de modification.
 
 5) testReinitialiserSelection
 
-Description : Vérifie que la réinitialisation efface bien tout le contenu du tableau.
-Retour attendu : cours[0] = null.
-Effets de bord : création d’un nouveau tableau vide, taille = 0.
+Ce que le test fait :
+Il ajoute un cours et réinitialise la sélection.
+
+Ce qu’on attend :
+Le tableau doit être vide.
+
+Effet sur le système :
+Le tableau de comparaison est remplacé par un nouveau vide.
