@@ -1,5 +1,5 @@
-site_name: IFT2255 - Template
-site_description: Template de site web pour le cours IFT2255 (Génie logiciel)
+site_name: Rapport - Planification d'horaire scolaire de l'UdeM
+site_description: Rapport de la plateforme de planification d'horaire scolaire de l'UdeM- IFT2255
 site_author: Louis-Edouard Lafontant
 site_url: https://ift3150-template.github.io
 
@@ -21,13 +21,13 @@ theme:
   palette:
     - scheme: default
       primary: custom
-      accent: indigo
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -68,8 +68,8 @@ plugins:
   - search
 
 
-# extra_css:
-#   - css/no-sidebar.css
+extra_css:
+  - css/custom.css
 
 nav:
   - Vue d'ensemble: index.md
@@ -85,6 +85,7 @@ nav:
     - Architecture: conception/architecture.md
     - Modèle de données: conception/modeles.md
     - Diagrammes UML: conception/uml.md
+    - Tests Unitaires : conception/tests.md
   - Application: application.md
   - Evaluation: evaluation.md
   - Bilan: bilan.md

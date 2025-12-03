@@ -1,12 +1,15 @@
----
-title: Analyse des besoins - Flux principaux
----
 
 # Flux principaux
 
-## Diagrammes
+## Flux général
+![Flux général](../Images/generalFlow.png)
+## Consulter les avis des étudiants
+![Flux Avis](../Images/Consulter-avisV2.png)
+## Comparer des cours
+![Flux Comparer](../Images/Comparer-coursV2.png)
+## Rechercher des cours
+![Flux Rechercher](../Images/Rechercher-coursV2.png)
 
-![Alt text](../Images/Diagramme_activité.png)
 
 # Description du flux d'activités principal
 

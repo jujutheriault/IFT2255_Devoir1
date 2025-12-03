@@ -1,0 +1,43 @@
+/* Affiche la sidebar sur les grands écrans */
+@media screen and (min-width: 76em) {
+  .md-sidebar--primary {
+    display: block !important;
+  }
+}
+
+/* Cache la sidebar uniquement sur mobile/tablettes */
+@media screen and (max-width: 76em) {
+  .md-sidebar--primary {
+    display: none !important;
+  }
+}
+
+/* Titre dans la barre du haut */
+.md-header__title {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+}
+
+/* Onglets (menus principaux) */
+.md-tabs__link {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+/* Onglet actif bien visible */
+.md-tabs__item--active .md-tabs__link {
+  border-bottom: 3px solid var(--md-primary-fg-color);
+}
+
+.md-nav__link--active {
+  font-weight: 600;
+}
+
+.md-nav__link--active,
+.md-nav__item .md-nav__link:hover {
+  background: rgba(53, 115, 221, 0.08);
+  border-radius: 999px;
+  padding-inline: 0.5rem;
+}
