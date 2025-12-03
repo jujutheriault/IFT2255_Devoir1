@@ -4,9 +4,11 @@
 
 ## Vue d’ensemble
 
-La conception du système utilise une architecture structurée autour d'une séparation claire entre modèle, contrôleurs et vues (MVC), ce qui favorise une compréhension simple du fonctionnement global et une évolue simple du logiciel. Elle adopte une architecture monolithique en couches exposant une API REST. Le choix d'un modèle monolithique s'est fait par le fait que le projet est crée par une petite équipe et le modèle présente une simplkcité de développement et de déploiement. 
+La conception du système utilise une architecture structurée autour d'une séparation claire entre modèle, contrôleurs et vues (MVC), ce qui favorise une compréhension simple du fonctionnement global et une possible évolution simplifiée du logiciel. Elle adopte une architecture en couches exposant une API REST. Cet API REST est développée de  manière orienté objet avec une approche modulaire. Le choix de ce type d'architecture correspond permet de répondre aux exigences du client surtout en ce qui concerne la clarté de l'application et puisque notre application doit s'occuper de la gestion de plusieurs entités différentes.
+De plus, l'application est facile à tester avec un logiciel comme Postman, ce qui donne une réduction du coût de validation. L'interface du client est aussi séparée du backend ''serveur'', cette indépendance assure un couplage faible entre la vue et le controlleur. 
+La séparation en modules permet aussi un couplage faible et une forte cohésion. Il est aussi plus facile de détecter les problèmes d'une partie du code avec cette approche contrairement à une architecture monolithique.Une API REST utilise aussi le protocole d'appels HTTP qui fourni une cache intégrée, ce qui améliore les performances de l'application.L'application est aussi plus stable puisque ce type d'architecture est utilisé partout.
 
-Normalement, la plateforme couvre un domaine fonctionnel bien délimité, limitant ainsi les fortes dépendances. On utilise l'API REST en tant qu'interface d'accès aux fonctionnalités métiers en permetant à l'utilisateur d'efectuer des appels HTTP. 
+
 
 ## Composants principaux
 ### Module d’authentification:
