@@ -2,14 +2,6 @@
 title: Vue d'ensemble
 ---
 
-<style>
-    @media screen and (min-width: 76em) {
-        .md-sidebar--primary {
-            display: none !important;
-        }
-    }
-</style>
-
 # Plateforme Web pour les étudiants de l'université de Montréal
 
 ## Équipe 14
