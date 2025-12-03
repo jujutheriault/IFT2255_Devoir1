@@ -5,6 +5,8 @@ title: Description des tests unitaires
 # Effets attendus + effets de bord des tests
 
 ## Cas d'utilisation : Recherche de cours
+**Tests effectués par Alix**
+
 Les tests suivant valident les différentes utilisation d'une recherche de cours selon le statut de l'utilisateur. 
 
 ### `testSearchCoursesStudent`
@@ -41,6 +43,8 @@ Ce test vérifie que la recherche de cours normal dans la barre de recherche par
 
 
 ## Cas d'utilisation : Consulter les détails d'un cours
+**Tests effectués par Justine**
+
 Les tests suivants valident les principales fonctionnalités de la classe CourseService
 ### `getAllCourses_returnListClientApi`
 
@@ -87,7 +91,7 @@ Un optional vide.
 L'exceprion est interceptée dans `CourseService` et non propagée. 
 
 ## Cas d'utilisation : Comparer des cours
-
+**Tests effectués par Ranya**
 Les tests suivants valident les principales fonctionnalités de la classe ComparaisonController.
 
 ### `testSelectionnerCoursComparer`
@@ -145,3 +149,7 @@ Le tableau doit être vide.
 
 **Effet sur le système :**
 Le tableau de comparaison est remplacé par un nouveau vide.
+
+## Cas d'utilisation : Utilisateur 
+**Tests effectués par Vincent**
+Les tests suivants valident les principales fonctionnalités de la classe User.
