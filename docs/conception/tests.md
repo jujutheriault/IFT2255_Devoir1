@@ -85,6 +85,9 @@ Un nouvel utilisateur est ajouté dans le système
 Description du test:
 le test mets à jour les informations de l'utilisateur.
 
+Ce qu'on attend:
+les informations de l'utilisateur sont modifiées
+
 Effet sur le système:
 l'utilisateur voit ses informations modifiées.
 
@@ -93,5 +96,41 @@ l'utilisateur voit ses informations modifiées.
 Description du test:
 l'utilisateur supprime ses informations de l'application
 
+Ce qu'on attend:
+les informations de l'utilisateur sont bels et bien supprimées.
+
 Effet sur le système:
 le système ne reconnaît plus l'utilisateur.
+
+9) testGetUserByIdNotFound
+
+Description du test:
+vérifie si l'identification de l'utilisateur n'est pas trouvé
+
+Ce qu'on attend:
+retourne vrai si l'utilisateur n'est pas trouvé
+
+Effet sur le système:
+aucun effet.
+
+10) testGetUserByIdFound
+
+Description du test:
+Vérifie si les informations d'un utilisateur sont présentes.
+
+Ce qu'on attend:
+Retourne vrai si les informations de l'utilisateur sont trouvées.
+
+Effet sur le système:
+Aucun effet.
+
+11) testGetAllUsers
+
+Description du test:
+le test devrait retourner tous les utilisateurs entrés, dans ce cas-ci 2 utilisateurs.
+
+Ce qu'on attend:
+retourne 2 utilisateurs
+
+Effet sur le système:
+Aucun système. la fonction compte le nombe d'utilisateurs.
