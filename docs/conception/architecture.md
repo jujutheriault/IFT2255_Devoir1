@@ -4,9 +4,14 @@
 
 ## Vue d’ensemble
 
-La conception du système utilise une architecture structurée autour d'une séparation claire entre modèle, contrôleurs et vues (MVC), ce qui favorise une compréhension simple du fonctionnement global et une possible évolution simplifiée du logiciel. Elle adopte une architecture en couches exposant une API REST. Cet API REST est développée de  manière orienté objet avec une approche modulaire. Le choix de ce type d'architecture correspond permet de répondre aux exigences du client surtout en ce qui concerne la clarté de l'application et puisque notre application doit s'occuper de la gestion de plusieurs entités différentes.
+La conception du système utilise une architecture structurée autour d'une séparation claire entre modèle, contrôleurs et vues (MVC), ce qui favorise une compréhension simple du fonctionnement global et une possible évolution simplifiée du logiciel. Elle adopte une architecture en couches exposant une API REST.
+
+ Cet API REST est développée de  manière orienté objet avec une approche modulaire. Le choix de ce type d'architecture correspond permet de répondre aux exigences du client surtout en ce qui concerne la clarté de l'application et puisque notre application doit s'occuper de la gestion de plusieurs entités différentes.
+
 De plus, l'application est facile à tester avec un logiciel comme Postman, ce qui donne une réduction du coût de validation. L'interface du client est aussi séparée du backend ''serveur'', cette indépendance assure un couplage faible entre la vue et le controlleur. 
-La séparation en modules permet aussi un couplage faible et une forte cohésion. Il est aussi plus facile de détecter les problèmes d'une partie du code avec cette approche contrairement à une architecture monolithique.Une API REST utilise aussi le protocole d'appels HTTP qui fourni une cache intégrée, ce qui améliore les performances de l'application.L'application est aussi plus stable puisque ce type d'architecture est utilisé partout.
+La séparation en modules permet aussi un couplage faible et une forte cohésion. 
+
+Il est aussi plus facile de détecter les problèmes d'une partie du code avec cette approche contrairement à une architecture monolithique.Une API REST utilise aussi le protocole d'appels HTTP qui fourni une cache intégrée, ce qui améliore les performances de l'application.L'application est aussi plus stable puisque ce type d'architecture est utilisé partout.
 
 
 
@@ -32,9 +37,14 @@ La séparation en modules permet aussi un couplage faible et une forte cohésion
   - **Responsabilités :** Intégrer les sources de données 
 
 ## Communication entre composants
+Les échanges entre les composantes se font quasi exclusivement sous forme d'appels HTTP sauf pour quelques appels entre le bot et discord qui se font en format Websocket. Les données sont en format JSON.
+
 **Mécanismes d’échange : appels HTTP**
 - Principalement GET, POST, PUT/DELETE
 - Chaque vues invoque les endpoints correspondants.
+
+
+
 
 **Format des données : JSON**
 Les entiers métiers (par exemple, `Cours`, `Étudiant`, `RésultatsAgrégées`,`TableauComparaison`) sont sérialisés en JSON et renvoyés au client, ce qui facilite l'interopérabilité avec d'Autres clients ou services potentiels (par exemple, Discord, Les résultats scolaires, etc).
